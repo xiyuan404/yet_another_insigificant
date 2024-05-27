@@ -21,7 +21,8 @@ copyright: 'referring from ayao(yet another insignficant...)'
 nav:
     - Home: index.md
     - joy of js: 
-      - for loop: deepJS/for-loop.md  
+      - javascript/index.md
+      - for loop: javascript/for-loop.md  
     - MkDocs:
         - getting-start: mkdocs/start.md
         - 配置文件解析: mkdocs/config.md
@@ -46,25 +47,40 @@ nav:
         - markdown配置: 'sphinx/Sphinx - markdown配置.md'
         - MathJax配置: './sphinx/Sphinx - MathJax.md'
         - bug: 'sphinx/Sphinx - bug.md'
-    - Pandoc: 'pandoc-文档转换工具.md'
-    - Readthedocs: 
-        - 介绍: './readthedocs/ReadtheDocs - 介绍.md'
 
 
 extra_css:
   - stylesheets/extra.css
+extra:
+  status:
+    new: Recently added
+    deprecated: Will be removed soon
 # Theme
 theme:
   name: material
-  # custom_dir: 'mkdocs-material/material/templates'
   static_templates:
     - 404.html
   language: 'zh'
+  features:
+    - content.tabs.link
+    - content.action.edit
+    - content.code.copy
+    # - toc.follow
+    - toc.integrate
+    - navigation.instant.progress
+    - navigation.instant.prefetch
+    # - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: indigo
       accent: red
       toggle:
         icon: material/weather-sunny
@@ -73,8 +89,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: custom
-      accent: indigo
+      primary: blue
+      accent: blue
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -83,16 +99,13 @@ theme:
   favicon: 'favicon.ico'
   icon:
     logo: 'material/school'
-  features:
-    - content.action.edit
-    - navigation.tabs
-    - navigation.instant
+    # annotation: 'material/material/plus-circle'
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'
 
-# plugins:
-#   - social
+plugins:
+  - social
 #   - search
 
 hooks:
@@ -107,6 +120,10 @@ extra:
 
 
 markdown_extensions:
+# annoatian
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -121,19 +138,20 @@ markdown_extensions:
   - toc:
       permalink: ""
       slugify: !!python/name:pymdownx.slugs.uslugify
+      title: On this page
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  # code block
   - pymdownx.highlight:
-      linenums: true
+      anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink
-  - pymdownx.mark
+  - pymdownx.snippets
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.progressbar
@@ -148,20 +166,15 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
+  
+
+
   - pymdownx.arithmatex:
       generic: true
   - footnotes
   - pymdownx.details
-  - pymdownx.superfences
+
   - pymdownx.mark
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 
 
