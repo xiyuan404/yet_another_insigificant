@@ -25,9 +25,23 @@ nav:
     - MkDocs:
         - getting-start: mkdocs/start.md
         - 配置文件解析: mkdocs/config.md
-
-    - Sphinx: 
-        - 介绍: 'sphinx/Sphinx - 介绍.md'
+        - Reference:
+          - reference/index.md
+          - Admonitions: reference/admonitions.md
+          - Annotations: reference/annotations.md
+          - Buttons: reference/buttons.md
+          - Code blocks: reference/code-blocks.md
+          - Content tabs: reference/content-tabs.md
+          - Data tables: reference/data-tables.md
+          - Diagrams: reference/diagrams.md
+          - Footnotes: reference/footnotes.md
+          - Formatting: reference/formatting.md
+          - Grids: reference/grids.md
+          - Icons, Emojis: reference/icons-emojis.md
+          - Images: reference/images.md
+          - Lists: reference/lists.md
+          - Math: reference/math.md
+          - Tooltips: reference/tooltips.md
    
         - markdown配置: 'sphinx/Sphinx - markdown配置.md'
         - MathJax配置: './sphinx/Sphinx - MathJax.md'
@@ -60,7 +74,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
-      accent: blue
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -81,6 +95,9 @@ theme:
 #   - social
 #   - search
 
+hooks:
+  - hooks/on_env.py
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -90,8 +107,13 @@ extra:
 
 
 markdown_extensions:
-  - toc:
-        permalink: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # - toc:
+  #       permalink: true
   - admonition
   - def_list
   - footnotes
