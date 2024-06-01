@@ -22,31 +22,28 @@ nav:
     - Home: index.md
     - joy of js: 
       - javascript/index.md
-      - for loop: javascript/for-loop.md  
+      - for loop: javascript/for-loop.md
+      - responsive: javascript/responsive.md
     - MkDocs:
         - getting-start: mkdocs/start.md
         - 配置文件解析: mkdocs/config.md
         - Reference:
           - reference/index.md
-          - Admonitions: reference/admonitions.md
-          - Annotations: reference/annotations.md
-          - Buttons: reference/buttons.md
-          - Code blocks: reference/code-blocks.md
-          - Content tabs: reference/content-tabs.md
-          - Data tables: reference/data-tables.md
-          - Diagrams: reference/diagrams.md
-          - Footnotes: reference/footnotes.md
-          - Formatting: reference/formatting.md
-          - Grids: reference/grids.md
-          - Icons, Emojis: reference/icons-emojis.md
-          - Images: reference/images.md
-          - Lists: reference/lists.md
-          - Math: reference/math.md
-          - Tooltips: reference/tooltips.md
-   
-        - markdown配置: 'sphinx/Sphinx - markdown配置.md'
-        - MathJax配置: './sphinx/Sphinx - MathJax.md'
-        - bug: 'sphinx/Sphinx - bug.md'
+          - Admonitions: mkdocs/reference/admonitions.md
+          - Annotations: mkdocs/reference/annotations.md
+          - Buttons: mkdocs/reference/buttons.md
+          - Code blocks: mkdocs/reference/code-blocks.md
+          - Content tabs: mkdocs/reference/content-tabs.md
+          - Data tables: mkdocs/reference/data-tables.md
+          - Diagrams: mkdocs/reference/diagrams.md
+          - Footnotes: mkdocs/reference/footnotes.md
+          - Formatting: mkdocs/reference/formatting.md
+          - Grids: mkdocs/reference/grids.md
+          - Icons, Emojis: mkdocs/reference/icons-emojis.md
+          - Images: mkdocs/reference/images.md
+          - Lists: mkdocs/reference/lists.md
+          - Math: mkdocs/reference/math.md
+          - Tooltips: mkdocs/reference/tooltips.md
 
 
 extra_css:
@@ -55,6 +52,12 @@ extra:
   status:
     new: Recently added
     deprecated: Will be removed soon
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/gearless-joeeee
+    # - icon: fontawesome/brands/twitter
+    # - icon: fontawesome/brands/linkedin
+
 # Theme
 theme:
   name: material
@@ -66,7 +69,6 @@ theme:
     - content.action.edit
     - content.code.copy
     # - toc.follow
-    - toc.integrate
     - navigation.instant.progress
     - navigation.instant.prefetch
     # - navigation.tracking
@@ -94,8 +96,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-  include_search_page: false
-  search_index_only: true
+
   favicon: 'favicon.ico'
   icon:
     logo: 'material/school'
@@ -111,47 +112,29 @@ plugins:
 hooks:
   - hooks/on_env.py
 
-extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/gearless-joeeee
-    - icon: fontawesome/brands/twitter
-    - icon: fontawesome/brands/linkedin
-
+  
 
 markdown_extensions:
-# annoatian
   - attr_list
   - md_in_html
-  - pymdownx.superfences
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  # - toc:
-  #       permalink: true
   - admonition
   - def_list
   - footnotes
   - meta
   - toc:
       permalink: ""
-      slugify: !!python/name:pymdownx.slugs.uslugify
       title: On this page
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
   # code block
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.progressbar
@@ -160,21 +143,14 @@ markdown_extensions:
       custom_fences:
         - name: math
           class: arithmatex
-          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
-  
-
-
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
   - pymdownx.details
 
-  - pymdownx.mark
 
 
 
