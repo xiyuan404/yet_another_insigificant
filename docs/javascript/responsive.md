@@ -29,16 +29,21 @@ css white space property
 ![alt text](images/*height.png)
 
 - offsetHeight 
-
-Height occupied by the element on document
+`VISIBLE content & padding & scrollbar `
 
 - clientHeight:
-only `VISIBLE content & padding`
-CSS height + CSS padding - height of horizontal scrollbar
-
+`VISIBLE content & padding` only
 
 - scollHeihgt
-`ENTIRE  content & padding (visible or not)`
-Height of all content + paddings, despite of height of the element.
+`ENTIRE content & padding (visible or not)`
 
 - Element.getBoundingClientRect()
+
+
+## spacing
+
+```css 
+  item:not(:last-child) {
+    margin-right: .06rem;
+  }
+```

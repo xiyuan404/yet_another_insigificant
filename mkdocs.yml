@@ -24,6 +24,10 @@ nav:
       - javascript/index.md
       - for loop: javascript/for-loop.md
       - responsive: javascript/responsive.md
+    - Bug report:
+      - bugs/index.md
+      - react-router-dom: bugs/react-router-dom.md
+    # - Feature request:
     - MkDocs:
         - getting-start: mkdocs/start.md
         - 配置文件解析: mkdocs/config.md
