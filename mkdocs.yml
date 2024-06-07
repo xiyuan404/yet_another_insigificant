@@ -35,6 +35,7 @@ nav:
       - 工欲善其事:
         - projects/developerTool/index.md
         - android studio: projects/developerTool/androidstudio.md
+        - ssh: projects/developerTool/ssh.md
     - Bug report:
       - bugs/index.md
       - react-router-dom: bugs/react-router-dom.md

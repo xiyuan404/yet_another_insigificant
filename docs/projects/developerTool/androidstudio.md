@@ -4,6 +4,9 @@
 - [x] snippets
 - [x] extensions
 - [x] shortcuts
+- [x] scripts
+- [x] configs
+
 
 
 
