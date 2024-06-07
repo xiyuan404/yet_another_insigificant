@@ -1,6 +1,6 @@
 # project info
-site_name: Yet another insignficant
-site_description: here, we share thoughts worth sharing
+site_name: Hammond Developer Blog
+site_description: coder, try to be enginner here, we share thoughts worth sharing
 site_author: ayao
 site_url: https://yet-another-insignficant.xyz
 
@@ -14,7 +14,7 @@ repo_url: 'https://github.com/gearless-joeeee/yet_another_insigificant...'
 
 
 # Copyright
-copyright: 'referring from ayao(yet another insignficant...)'
+copyright: coder, try to be engineer. here, we share thoughts worth sharing
 
 
 # Contents
@@ -24,6 +24,17 @@ nav:
       - javascript/index.md
       - for loop: javascript/for-loop.md
       - responsive: javascript/responsive.md
+      - event: javascript/event.md
+    - 项目随想录:
+      - projects/index.md
+      - 神舟医疗项目: 
+        - Bug report: projects/shenzhou/bug.md
+      - 图片: projects/image_solution.md
+      - 网络和存储: projects/network_storage.md
+      - 版本控制:  projects/version_control.md
+      - 工欲善其事:
+        - projects/developerTool/index.md
+        - android studio: projects/developerTool/androidstudio.md
     - Bug report:
       - bugs/index.md
       - react-router-dom: bugs/react-router-dom.md

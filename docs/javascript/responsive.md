@@ -1,6 +1,9 @@
 
-
-
+# css workflow
+- [x] spacing
+- [x] sizing
+- [x] alignment
+- [x] color
 
 ## resize
 ```js
