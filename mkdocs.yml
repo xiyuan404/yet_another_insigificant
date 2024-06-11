@@ -29,6 +29,10 @@ nav:
       - projects/index.md
       - 神舟医疗项目: 
         - Bug report: projects/shenzhou/bug.md
+        - modules: 
+          - 出诊计划: projects/shenzhou/modules/schedule.md
+        - extensions:
+          - 前后端数据通信: projects/shenzhou/extensions/ajax_axios.md
       - 图片: projects/image_solution.md
       - 网络和存储: projects/network_storage.md
       - 版本控制:  projects/version_control.md
@@ -40,6 +44,8 @@ nav:
       - bugs/index.md
       - react-router-dom: bugs/react-router-dom.md
     # - Feature request:
+    - Utils: 
+      - utils/index.md
     - MkDocs:
         - getting-start: mkdocs/start.md
         - 配置文件解析: mkdocs/config.md

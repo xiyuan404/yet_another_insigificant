@@ -7,6 +7,7 @@
 **Ideas Worth Sharing** 这里主要记录我在写项目中的学习和思考
 
 - [x] look up as you go
+- [x] workaround
 
 本项目受 [OI Wiki](https://oi-wiki.org) 的启发,在此致谢。
 <!-- 
