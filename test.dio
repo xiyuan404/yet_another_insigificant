@@ -1,0 +1,89 @@
+
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.js"></script>
+<script>
+const sportList = document.querySelector('#sport-list')
+const sportMain = document.querySelector('#sport-main')
+const loadingDown = document.querySelector('#loading-down')
+const loadingUp = document.querySelector('#loading-up')
+const loading = document.querySelector('#loading')
+
+const current = 0
+
+initList()
+function initList() {
+	loading = 'Loading...'
+  axios
+    .post('/sportList', {
+      page: 1,
+      count: 10,
+    })
+    .then((res) => {
+      if (res.data.errcode === 0) {
+				setTimeout(() => {
+					sportList.innerHtml = res.data.result.map((item) => {
+						return `
+						<li>{item}<li>
+					`
+					})
+					initBetterScroll()
+					loading = ''
+				}, 1000);
+      }
+    })
+}
+function initBetterScroll() {
+  let bs = BetterScroll.initBetterScroll(sportMain, {
+    // 触发条件
+    pullDownRefresh: {
+      threshold: 50,
+    },
+    pullUpLoad: {
+      threshod: -10,
+    },
+  })
+
+  bs.on('pullingDown', () => {
+    loadingDown.innerHtml = 'loading...'
+    axios
+      .post('sportList', {
+        page: 0,
+        count: 10,
+      })
+      .then((res) => {
+        if (res.data.errcode === 0) {
+          setTimeout(() => {
+            sportList.innerHtml = res.data.result.map((item) => {
+              return `
+							<li>{item}</li>
+						`
+            })
+            loadingDown.innerHtml = '刷新成功'
+            bs.finishPullDown()
+            bs.refresh()
+						current = 0
+          }, 1000)
+        }
+      })
+  })
+
+	bs.on('pullingUp', ()=>{
+		pullingUp.innerHtml = 'Loading...'
+		axios.post('/sportList', {
+			page: ++current,
+			count: 10
+		}).then(res=>{
+			if(res.data.errcode === 0){
+				sportList.innerHtml += res.data.result.map(item=>{
+					return `
+						<li>{item}</li>
+					`
+				})
+				loadingUp.innerHtml = res.data.result.length > 0 ? '加载更多' : 
+				bs.finishPullUp()
+				bs.refresh()
+			}
+		})
+	})
+}
+
+</script>

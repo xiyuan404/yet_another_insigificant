@@ -139,6 +139,10 @@ xhr.onload = function(){
 
 swagger
 
+
+
+## 实现上拉刷新,下拉加载更多
+
 错误码
 
 - -1 : 参数个数错误
@@ -180,5 +184,149 @@ router.post('/page', async(ctx, next)=>{
 	})  
 })
 
+```
+
+
+
+```vue
+<template>
+	<div id="loading"></div>
+  <div id="loading-down"></div>
+  <main id="sport-main">
+    <div class="list-wrapper">
+      <ul class="sport-list"></ul>
+      <div id="loading-up"></div>
+    </div>
+  </main>
+</template>
+
+<style>
+#sport-main {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+}
+</style>
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.js"></script>
+<script>
+const sportList = document.querySelector('#sport-list')
+const sportMain = document.querySelector('#sport-main')
+const loadingDown = document.querySelector('#loading-down')
+const loadingUp = document.querySelector('#loading-up')
+const loading = document.querySelector('#loading')
+const current = 0
+
+initList()
+function initList() {
+	loading = 'Loading...'
+  axios
+    .post('/sportList', {
+      page: 1,
+      count: 10,
+    })
+    .then((res) => {
+      if (res.data.errcode === 0) {
+				setTimeout(() => {
+					sportList.innerHtml = res.data.result.map((item) => {
+						return `
+						<li>{item}<li>
+					`
+					})
+					initBetterScroll()
+					loading = ''
+				}, 1000);
+      }
+    })
+}
+function initBetterScroll() {
+  let bs = BetterScroll.initBetterScroll(sportMain, {
+    // 触发条件
+    pullDownRefresh: {
+      threshold: 50,
+    },
+    pullUpLoad: {
+      threshod: -10,
+    },
+  })
+
+  bs.on('pullingDown', () => {
+    loadingDown.innerHtml = 'loading...'
+    axios
+      .post('sportList', {
+        page: 0,
+        count: 10,
+      })
+      .then((res) => {
+        if (res.data.errcode === 0) {
+          setTimeout(() => {
+            sportList.innerHtml = res.data.result.map((item) => {
+              return `
+							<li>{item}</li>
+						`
+            })
+            loadingDown.innerHtml = '刷新成功'
+            bs.finishPullDown()
+            bs.refresh()
+						current = 0
+          }, 1000)
+        }
+      })
+  })
+
+	bs.on('pullingUp', ()=>{
+		pullingUp.innerHtml = 'Loading...'
+		axios.post('/sportList', {
+			page: ++current,
+			count: 10
+		}).then(res=>{
+			if(res.data.errcode === 0){
+				sportList.innerHtml += res.data.result.map(item=>{
+					return `
+						<li>{item}</li>
+					`
+				})
+				loadingUp.innerHtml = res.data.result.length > 0 ? '加载更多' : 
+				bs.finishPullUp()
+				bs.refresh()
+			}
+		})
+	})
+}
+
+</script>
+```
+
+
+
+
+
+### 跨域与反向代理
+
+__浏览器同源策略__
+
+<div class="grid cards" markdown>
+
+-  __协议相同__
+-  __域名相同__
+-  __端口相同__
+
+</div>
+
+| URL                               | 结果                  | 原因     |
+| --------------------------------- | --------------------- | -------- |
+| http://localhost:3000/sports.html | 成功:material-check:  |          |
+| http://localhost:3000/list        | 成功 :material-check: |          |
+| https://localhost:3000/list       | 失败 :material-close: | 协议不同 |
+| http://127.0.0.1:3000/list        | 失败 :material-close: | 域名不同 |
+| http://localhost:8080/list        | 失败 :material-close: | 端口不同 |
+
+```js
+ctx.set('Access-Control-Allow-origin', 'http://localhost:3000')
+```
+
+
+
+```js
+cbRegex = /callback=([^&]+)/
+cbRegex.test('http://1237.0.0.1:3000?callback=foo')
 ```
 
