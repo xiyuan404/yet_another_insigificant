@@ -23,10 +23,12 @@ nav:
     - Javascript内功修炼: 
       - javascript/index.md
       - 执行上下文: javascript/execution_context.md
+      - 原型继承: javascript/prototype.md
+      - 异步编程: javascript/async.md
+      - 垃圾回收: javascript/garbage_collection.md
       - for loop: javascript/for-loop.md
       - responsive: javascript/responsive.md
       - event: javascript/event.md
-      - 原型继承: javascript/prototype.md
     - Vue源码解读: vue/index.md
     - React源码解读: react/index.md
     - 前端工程化: enginner/index.md
@@ -146,6 +148,8 @@ hooks:
   
 
 markdown_extensions:
+  - footnotes
+  - md_in_html # for image capation
   - attr_list
   - md_in_html
   - pymdownx.critic

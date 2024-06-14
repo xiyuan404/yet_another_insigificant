@@ -1,6 +1,5 @@
 ---
-icon: material/code-json
-status: new
+
 ---
 # for statement
 

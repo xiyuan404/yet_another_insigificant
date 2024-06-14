@@ -56,3 +56,12 @@ console.log(
 );
 
 ```
+
+
+## color system
+```css
+:root {
+
+  --yellow: #fad956;
+}
+```

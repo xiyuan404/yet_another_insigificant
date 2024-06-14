@@ -3,35 +3,7 @@
 
 
 
-![protype inheritance](images/jsobj_full.jpg)
 
-
-
-- [x] 原型:任何js对象的创建都会关联一个对象, 任何根据原型的构造函数创建出来的对象,都会继承原型上的属性
-
-```js
-function (){
-	  this = Object.create(prototype)
-}
-
-const o = new Object()
-console.log(o.__proto__ === Object.prototype)
-console.log(Object.getPrototypeOf(o) === Object.prototype)
-console.log(Object.prototype.constructor === Object)
-
-
-
-```
-
-- [x] 原型链和subclassing
-- [x] 原型链继承
-
-> behaviour delegation vs prototype inheritance
-
-```js
-console.log(o.constructor === Object)
-console.log(Object.prototype.constructor === Object) 
-```
 
 ## 词法作用域 动态作用域
 
