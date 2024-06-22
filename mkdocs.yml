@@ -19,18 +19,25 @@ copyright: coder, try to be engineer. here, we share thoughts worth sharing
 
 # Contents
 nav:
-    - Home: index.md
+    - YaoLin: 
+      - biograph.md
+    - Home:
+      - index.md
+      - awesome blog: awesome_blog.md
     - Javascript内功修炼: 
       - javascript/index.md
       - 执行上下文: javascript/execution_context.md
       - 原型继承: javascript/prototype.md
       - 异步编程: javascript/async.md
       - 垃圾回收: javascript/garbage_collection.md
+      - 事件循环: javascript/event_loop.md
       - for loop: javascript/for-loop.md
       - responsive: javascript/responsive.md
       - event: javascript/event.md
     - Vue源码解读: vue/index.md
-    - React源码解读: react/index.md
+    - React源码解读: 
+      - react/index.md
+      - 项目架构: react/setup.md
     - 前端工程化: enginner/index.md
     - 性能调优: performance/index.md
     - 前端框架生态库: ecosystem/index.md
@@ -115,8 +122,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: red
+      primary: indigo  
+      accent: deep orange
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode

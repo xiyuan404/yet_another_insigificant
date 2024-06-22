@@ -74,9 +74,11 @@ One potential weakness of a garbage collector which copies surviving objects is 
 
 !!! note 
 
-​	stack分配固定大小的值
+​		stack分配固定大小的值
 
-​	heap分配可变大小的值
+​		heap分配可变大小的值
+
+
 
 The heap in V8 is split into different regions called [generations](https://v8.dev/blog/orinoco-parallel-scavenger). There is a young generation (split further into ‘nursery’ and ‘intermediate’ sub-generations), and an old generation. Objects are first allocated into the nursery. If they survive the next GC, they remain in the young generation but are considered ‘intermediate’. If they survive yet another GC, they are moved into the old generation.
 V8 中的堆被分为不同的区域，称为代。有年轻一代（进一步分为“幼儿”和“中间”子代）和老一代。对象首先被分配到托儿所中。如果它们在下一次 GC 中幸存下来，它们仍保留在年轻代中，但被视为“中间”。如果它们在另一次 GC 中幸存下来，它们就会被移入老年代。
@@ -145,6 +147,18 @@ at 60 frames per second, the browser has approximately 16.6 ms to render each fr
 
 <figure markdown="span">   ![idle_time_GC](images/idle_time_GC.svg){ width="800" }
   <figcaption>Idle GC makes use of free time on the main thread to perform GC work proactively.</figcaption> </figure>
+
+
+- `First-fit`，找到大于等于 `size` 的块立即返回
+- `Best-fit`，遍历整个空闲列表，返回大于等于 `size` 的最小分块
+- `Worst-fit`，遍历整个空闲列表，找到最大的分块，然后切成两部分，一部分 `size` 大小，并将该部分返回
+
+
+
+
+
+
+
 
 [^1]: [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/orinoco-parallel-scavenger)
 [^2]: [Orinoco: young generation garbage collection ](https://v8.dev/blog/orinoco-parallel-scavenger)
