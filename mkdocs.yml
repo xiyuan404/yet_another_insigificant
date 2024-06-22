@@ -4,27 +4,22 @@ site_description: coder, try to be enginner here, we share thoughts worth sharin
 site_author: ayao
 site_url: https://yet-another-insignficant.xyz
 
-
-
 # Repositroy
 repo_name: 'yet-another-insignficant'
 repo_url: 'https://github.com/gearless-joeeee/yet_another_insigificant...'
 # edit_uri: 'https://github.com/gearless-joeeee/yet_another_insigificant.../edit-landing/?ref='
 
-
-
 # Copyright
 copyright: coder, try to be engineer. here, we share thoughts worth sharing
 
-
 # Contents
 nav:
-    - YaoLin: 
+  - YaoLin:
       - biograph.md
-    - Home:
+  - Home:
       - index.md
       - awesome blog: awesome_blog.md
-    - Javascript内功修炼: 
+  - Javascript内功修炼:
       - javascript/index.md
       - 执行上下文: javascript/execution_context.md
       - 原型继承: javascript/prototype.md
@@ -34,40 +29,40 @@ nav:
       - for loop: javascript/for-loop.md
       - responsive: javascript/responsive.md
       - event: javascript/event.md
-    - Vue源码解读: vue/index.md
-    - React源码解读: 
+  - Vue源码解读: vue/index.md
+  - React源码解读:
       - react/index.md
       - 项目架构: react/setup.md
-    - 前端工程化: enginner/index.md
-    - 性能调优: performance/index.md
-    - 前端框架生态库: ecosystem/index.md
-    - 设计模式和系统架构: design/index.md
-    - 数据结构与算法: algorithm/index.md
-    - 项目随想录:
+  - 前端工程化: enginner/index.md
+  - 性能调优: performance/index.md
+  - 前端框架生态库: ecosystem/index.md
+  - 设计模式和系统架构: design/index.md
+  - 数据结构与算法: algorithm/index.md
+  - 项目随想录:
       - projects/index.md
-      - 神舟医疗项目: 
-        - Bug report: projects/shenzhou/bug.md
-        - modules: 
-          - 出诊计划: projects/shenzhou/modules/schedule.md
-        - extensions:
-          - 前后端数据通信: projects/shenzhou/extensions/ajax_axios.md
+      - 神舟医疗项目:
+          - Bug report: projects/shenzhou/bug.md
+          - modules:
+              - 出诊计划: projects/shenzhou/modules/schedule.md
+          - extensions:
+              - 前后端数据通信: projects/shenzhou/extensions/ajax_axios.md
       - 图片: projects/image_solution.md
       - 网络和存储: projects/network_storage.md
-      - 版本控制:  projects/version_control.md
+      - 版本控制: projects/version_control.md
       - 工欲善其事:
-        - projects/developerTool/index.md
-        - android studio: projects/developerTool/androidstudio.md
-        - ssh: projects/developerTool/ssh.md
-    - Bug report:
-      - bugs/index.md
+          - projects/developerTool/index.md
+          - android studio: projects/developerTool/androidstudio.md
+          - ssh: projects/developerTool/ssh.md
+  - Bug report:
+      - ssh: bugs/ssh.md
       - react-router-dom: bugs/react-router-dom.md
-    # - Feature request:
-    - Utils: 
+  # - Feature request:
+  - Utils:
       - utils/index.md
-    - MkDocs:
-        - getting-start: mkdocs/start.md
-        - 配置文件解析: mkdocs/config.md
-        - Reference:
+  - MkDocs:
+      - getting-start: mkdocs/start.md
+      - 配置文件解析: mkdocs/config.md
+      - Reference:
           - reference/index.md
           - Admonitions: mkdocs/reference/admonitions.md
           - Annotations: mkdocs/reference/annotations.md
@@ -84,7 +79,6 @@ nav:
           - Lists: mkdocs/reference/lists.md
           - Math: mkdocs/reference/math.md
           - Tooltips: mkdocs/reference/tooltips.md
-
 
 extra_css:
   - stylesheets/extra.css
@@ -120,16 +114,16 @@ theme:
     - navigation.top
   palette:
     # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
+    - media: '(prefers-color-scheme: light)'
       scheme: default
-      primary: indigo  
+      primary: indigo
       accent: deep orange
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
 
     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
       primary: blue
       accent: blue
@@ -152,8 +146,6 @@ plugins:
 hooks:
   - hooks/on_env.py
 
-  
-
 markdown_extensions:
   - footnotes
   - md_in_html # for image capation
@@ -169,7 +161,7 @@ markdown_extensions:
   - footnotes
   - meta
   - toc:
-      permalink: ""
+      permalink: ''
       title: On this page
   - pymdownx.arithmatex:
       generic: true
@@ -192,7 +184,3 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
-
-
-
-
