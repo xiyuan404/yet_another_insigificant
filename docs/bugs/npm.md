@@ -1,0 +1,1 @@
+> Run `npm bin --global` to find out where npm installs global executables. Add **that** path to your `PATH` environment variable, by adding a line in your `.profile`/`.bash_profile`/`.zprofile` or similar, depending on which shell you use (you can find out what is your default shell using `echo $SHELL`).

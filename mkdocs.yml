@@ -26,14 +26,19 @@ nav:
       - 异步编程: javascript/async.md
       - 垃圾回收: javascript/garbage_collection.md
       - 事件循环: javascript/event_loop.md
+      - es6+: javascript/es6+.md
       - for loop: javascript/for-loop.md
       - responsive: javascript/responsive.md
       - event: javascript/event.md
   - Vue源码解读: vue/index.md
   - React源码解读:
+      - jsx: react/jsx.md
       - react/index.md
-      - 项目架构: react/setup.md
-  - 前端工程化: enginner/index.md
+      - 环境搭建: react/setup.md
+      - JSX转换: react/jsx-transpile.md
+      - 初探reconciler: react/reconciler.md
+      - 如何触发更新: react/update.md
+  - 前端工程化: engineer/index.md
   - 性能调优: performance/index.md
   - 前端框架生态库: ecosystem/index.md
   - 设计模式和系统架构: design/index.md
@@ -115,7 +120,6 @@ theme:
   palette:
     # Palette toggle for light mode
     - media: '(prefers-color-scheme: light)'
-      scheme: default
       primary: indigo
       accent: deep orange
       toggle:

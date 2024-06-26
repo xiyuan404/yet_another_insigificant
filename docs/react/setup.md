@@ -1,4 +1,4 @@
-# 搭建项目架构
+# 搭建开发环境
 
 - 项目架构(monorepo)
 - 开发规范(lint、commit、style、pretty)
@@ -16,15 +16,19 @@ MonoRepo vs MultiRepo 该如何选择
 
 <span  style="font-size: 18px; display: inline-block; padding-left: 10px; border-left: 5px solid rgb(145, 109, 213);">Mono-repo 技术选型</span>
 
-包管理工具`workspace`:
+包管理工具pnpm feature`workspace`:
 
-<ul style="list-style-type:circle; padding-left: 30px;">
-<li><a href="https://pnpm.io/installation" style="color: rgb(145, 109, 213); font-weight: bolder; border-bottom: 1px solid rgb(145, 109, 213);">pnpm workspace</a></li>
-</ul>
-安装
+- [pnpm workspace](https://pnpm.io/installation)
+
+First, let's install command line tool `pnpm` to wrok with `monoRepo` project
 
 ```bash
 npm i -g pnpm
+```
+
+Now use pnpm to init a new `monoRepo` project
+
+```bash
 pnpm init
 ```
 
@@ -32,7 +36,11 @@ pnpm init
 
 ```json
 {
-  "private": true
+  "private": true, // not publish to npm registery
+  "module": "index.ts", // ESmodule module loading entry 
+  "type": "module", // Files ending with .js are loaded as ES modules when the nearest parent package.json file contains a top-level field "type" with a value of "module".
+  "packageManager": "pnpm",
+  "desc": "react公用方法"
 }
 ```
 
@@ -47,7 +55,7 @@ packages:
 
 <span  style="font-size: 18px; display: inline-block; padding-left: 10px; border-left: 5px solid rgb(145, 109, 213);">开发规范</span>
 
-<h3 style="text-align:center;  font-size: 16px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">代码规范</span></h3>
+<h3 style="text-align:center;  font-size: 20px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">代码规范</span></h3>
 
 安装:
 
@@ -63,11 +71,13 @@ npx eslint --lint
 
 安装 ts 的规范规则集:
 
-> ![stylistic rules](https://eslint.style/rules/js/one-var-declaration-per-line)
-> require one space before and after an arrow function's arrow(=>).
-> disallow spaces between array brackets and other tokens
-> object-curly-spacing
-> one-var-declaration-per-line
+> [stylistic rules](https://eslint.style/rules/js/one-var-declaration-per-line)
+>
+> - require one space before and after an arrow function's arrow(=>).
+>
+> - disallow spaces between array brackets and other tokens
+> - object-curly-spacing
+> - one-var-declaration-per-line
 
 ```bash
 pnpm i -D -w @typescript-eslint/eslint-plugin
@@ -107,7 +117,7 @@ pnpm i -D -w @typescript-eslint/eslint-plugin
 }
 ```
 
-<h3 style="text-align:center;  font-size: 16px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">代码风格</span></h3>
+<h3 style="text-align:center;  font-size: 20px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">代码风格</span></h3>
 
 安装:
 
@@ -115,7 +125,7 @@ pnpm i -D -w @typescript-eslint/eslint-plugin
 pnpm i prettier -D -w
 ```
 
-新建`.prettierrc.json`配置文件, 添加配置:
+新建`.prettierrc.json`配置文件, 添加如下配置:
 
 ```json
  {
@@ -148,7 +158,8 @@ pnpm i eslint-config-prettier eslint-plugin-prettier -D -w
 "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages"
 ```
 
-<h3 style="text-align:center;  font-size: 16px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">代码风格</span></h3>
+<h3 style="text-align:center;  font-size: 20px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">代码提交</span></h3>
+
 安装`husky`，用于拦截commit命令：
 ```bash
 pnpm i husky -D -w
@@ -205,8 +216,11 @@ git 提交格式：
 - `refactor`: 代码重构
 - `test`: 添加测试代码等
 
-<h3 style="text-align:center;  font-size: 16px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">选择转译工具(transpiler tool)</span></h3>
+<h3 style="text-align:center;  font-size: 20px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">选择转译工具(transpiler tool)</span></h3>
+
 ![transpiler_tools](images/transpiler_tools.png)
+
+> "w/o" for "without"  "w/" was borrowed from this "w/" for "with"
 
 新建配置文件`tsconfig.json`，添加如下配置：
 
@@ -234,7 +248,8 @@ git 提交格式：
 }
 ```
 
-<h3 style="text-align:center;  font-size: 16px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">选择打包工具(bundle tool)</span></h3>
+<h3 style="text-align:center;  font-size: 20px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">选择打包工具(bundle tool)</span></h3>
+
 ![bundle_tools](images/bundle_tools.png)
 [不同打包工具比较](https://bundlers.tooling.report/)
 开发项目特点

@@ -85,17 +85,17 @@ YaoLin
   </label>
   <label class="checkbox-wrapper">
     <span class="checkbox"> <input type="checkbox" checked/> </span>
-    <span> 低代码/ 云原生自动化运维/人工智能,新能源</span>
+    <span> 低代码/ 云原生自动化运维/人工智能,新能源 </span>
   </label>
   <label class="checkbox-wrapper">
-    <span class="checkbox"> <input type="checkbox"/> </span>
-    <span> 嵌入式开发（RISC-V/ARM/MCU/RTOS）</span>
+    <span class="checkbox"> <input type="checkbox" checked/> </span>
+    <span> react/servelt/vue/solidty.js </span>
   </label>
+  
+
   <label class="checkbox-wrapper">
     <span class="checkbox"> <input type="checkbox"/> </span>
     <span> 硬件/驱动/系统软件开发（汇编/C语言/Linux/Drivers/KVM/Hypervisor）</span>
   </label>
 </div>
 </div>
-
-
