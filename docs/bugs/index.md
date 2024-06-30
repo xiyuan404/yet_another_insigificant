@@ -118,4 +118,16 @@ Verify 核实
 ```shell
 ➜  ~ ruby -v
 ruby 3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [arm64-darwin21]
+
+
+
 ```
+
+
+
+- [x] Lingering update files taking up a lot of space
+
+```bash
+sudo rm -rf /System/Library/AssetsV2/com_apple_MobileAsset_MacSoftwareUpdate
+```
+

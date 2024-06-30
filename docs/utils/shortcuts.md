@@ -25,9 +25,47 @@
 
 ```json
 {
-  "key": "cmd+i",
+  "key": "cmd+i", // ctrl + space2
   "command": "editor.action.triggerSuggest",
   "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
 }
 ```
 
+- [x]  trigger parameter hint (esc to close)
+
+```json
+{
+  "key": "shift+cmd+space",
+  "command": "editor.action.triggerParameterHints",
+  "when": "editorHasSignatureHelpProvider && editorTextFocus"
+}
+```
+
+- [x] find and replace
+
+
+
+```json
+{
+  "key": "alt+cmd+f",
+  "command": "editor.action.startFindReplaceAction",
+  "when": "editorFocus || editorIsOpen"
+}
+```
+
+- [x] toggle panel visibility
+
+```json
+{
+  "key": "cmd+j",
+  "command": "workbench.action.togglePanel"
+}
+```
+
+
+
+
+
+
+
+![dev_tool](images/dev_tool_shortcut.png)

@@ -1,18 +1,8 @@
-<head>
-  <style>
-    .text-in-code {
-			font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    	font-size: 90%;
-    	line-height: 1.75;
-    	color: rgb(46, 159, 116) !important;
-    	border-radius: 4px;
-    	background-color: rgba(0, 150, 136, 0.1) !important;
-    	padding: 4px 6px;
-  }
-  </style>
 
 
-</head>
+- [spider monkey team](https://spidermonkey.dev/)
+- [v8 team](https://v8.dev/)
+- [webkit team](https://webkit.org/team/)
 
 
 

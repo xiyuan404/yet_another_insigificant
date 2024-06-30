@@ -1,4 +1,6 @@
-# 搭建开发环境
+# 搭建开发和调试环境
+
+> dev env & debug env set up
 
 - 项目架构(monorepo)
 - 开发规范(lint、commit、style、pretty)
@@ -26,10 +28,10 @@ First, let's install command line tool `pnpm` to wrok with `monoRepo` project
 npm i -g pnpm
 ```
 
-Now use pnpm to init a new `monoRepo` project
+Now use pnpm to init a new `monoRepo` project in current folder
 
 ```bash
-pnpm init
+pnpm init . 
 ```
 
 在初始化后的`package.json`中,修改配置如下:

@@ -28,8 +28,15 @@ nav:
       - 事件循环: javascript/event_loop.md
       - es6+: javascript/es6+.md
       - for loop: javascript/for-loop.md
-      - responsive: javascript/responsive.md
+      - 响应式: javascript/responsive.md
       - event: javascript/event.md
+      - native utils polyfill 实现: javascript/utils.md
+  - webGL:
+      - webGL/index.md
+  - webRTC:
+      - webRTC/index.md
+  - webGIS:
+      - webGIS/index.md
   - Vue源码解读: vue/index.md
   - React源码解读:
       - jsx: react/jsx.md
@@ -64,26 +71,8 @@ nav:
   # - Feature request:
   - Utils:
       - utils/index.md
-  - MkDocs:
-      - getting-start: mkdocs/start.md
-      - 配置文件解析: mkdocs/config.md
-      - Reference:
-          - reference/index.md
-          - Admonitions: mkdocs/reference/admonitions.md
-          - Annotations: mkdocs/reference/annotations.md
-          - Buttons: mkdocs/reference/buttons.md
-          - Code blocks: mkdocs/reference/code-blocks.md
-          - Content tabs: mkdocs/reference/content-tabs.md
-          - Data tables: mkdocs/reference/data-tables.md
-          - Diagrams: mkdocs/reference/diagrams.md
-          - Footnotes: mkdocs/reference/footnotes.md
-          - Formatting: mkdocs/reference/formatting.md
-          - Grids: mkdocs/reference/grids.md
-          - Icons, Emojis: mkdocs/reference/icons-emojis.md
-          - Images: mkdocs/reference/images.md
-          - Lists: mkdocs/reference/lists.md
-          - Math: mkdocs/reference/math.md
-          - Tooltips: mkdocs/reference/tooltips.md
+  - docs 定制化:
+      - getting-start: custom/start.md
 
 extra_css:
   - stylesheets/extra.css
@@ -99,6 +88,9 @@ extra:
 
 # Theme
 theme:
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
   name: material
   static_templates:
     - 404.html
@@ -107,21 +99,21 @@ theme:
     - content.tabs.link
     - content.action.edit
     - content.code.copy
-    # - toc.follow
+    - toc.follow
     - navigation.instant.progress
     - navigation.instant.prefetch
-    # - navigation.tracking
+    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
     - navigation.path
     - navigation.indexes
     - navigation.top
   palette:
     # Palette toggle for light mode
     - media: '(prefers-color-scheme: light)'
+      scheme: default
       primary: indigo
-      accent: deep orange
+      accent: purple
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -145,6 +137,10 @@ theme:
 
 plugins:
   - social
+  - blog:
+      blog_dir: .
+  - search
+  - tags
 #   - search
 
 hooks:
