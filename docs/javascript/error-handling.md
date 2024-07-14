@@ -1,0 +1,3 @@
+- **ReferenceError** − Trying to access an undefined variable/ method.
+- **TypeError** − Attempting an operation on incompatible data types.
+- **RangeError** − A value exceeds the allowed range.

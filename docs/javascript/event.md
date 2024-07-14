@@ -1,12 +1,46 @@
-# 浏览器事件模型
+# event model
+
+```
+                 | |  / \
+-----------------| |--| |-----------------
+| element1       | |  | |                |
+|   -------------| |--| |-----------     |
+|   |element2    \ /  | |          |     |
+|   --------------------------------     |
+|        W3C event model                 |
+------------------------------------------
+```
+
+
 
 ```js
-class EventEmitter {
-  constructor(){
-		
-  }
+addEventListener(
+  type, 
+  listener, 
+  useCapture // default to false
+)
+```
+
+```js
+addEventListener(
+  type, 
+  listener, 
+  options
+)
+
+otpions = {
+	capture: false,
+  once: false
+  singal: 
 }
 ```
+
+
+
+- event delegation
+- event bubbling
+- event capturing
+- custom events
 
 
 

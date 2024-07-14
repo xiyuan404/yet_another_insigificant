@@ -1,0 +1,4 @@
+- list
+- map
+- set
+- collection transformation

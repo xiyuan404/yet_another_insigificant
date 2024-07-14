@@ -1,6 +1,6 @@
 # project info
-site_name: Hammond Developer Blog
-site_description: coder, try to be enginner here, we share thoughts worth sharing
+site_name: shot for the moon
+site_description: coder, try to be engineer here, we share thoughts worth sharing, xiyuan as my dev community name
 site_author: ayao
 site_url: https://yet-another-insignficant.xyz
 
@@ -18,7 +18,7 @@ nav:
       - biograph.md
   - Home:
       - index.md
-      - awesome blog: awesome_blog.md
+      - awesome blog: awesome-blog.md
   - Javascript内功修炼:
       - javascript/index.md
       - 执行上下文: javascript/execution_context.md
@@ -31,12 +31,35 @@ nav:
       - 响应式: javascript/responsive.md
       - event: javascript/event.md
       - native utils polyfill 实现: javascript/utils.md
+  - datav:
+      - d3: datav/d3.md
   - webGL:
-      - webGL/index.md
+      - WebGL/index.md
+      - spotlight: WebGL/spotlight.md
+      - animation: WebGL/animation.md
+      - interaction: WebGL/interaction.md
+      - camera: WebGL/camera.md
+      - light: WebGL/light.md
+      - integrate: WebGL/integrate.md
   - webRTC:
       - webRTC/index.md
   - webGIS:
       - webGIS/index.md
+  - 跨端开发实战:
+      - crossplatform/index.md
+  - 项目随想录:
+      - projects/index.md
+      - 大文件上传: projects/file-upload.md
+      - 缓存和视图: projects/buffer-and-view.md
+      - symbol: projects/symbol.md
+      - 图片: projects/image_solution.md
+      - 网络和存储: projects/network_storage.md
+      - 版本控制: projects/version_control.md
+  - 工欲善其事:
+      - devtools/index.md
+      - devtools/markdown.md
+      - devtools/vscode.md
+      - devtools/vim.md
   - Vue源码解读: vue/index.md
   - React源码解读:
       - jsx: react/jsx.md
@@ -50,27 +73,12 @@ nav:
   - 前端框架生态库: ecosystem/index.md
   - 设计模式和系统架构: design/index.md
   - 数据结构与算法: algorithm/index.md
-  - 项目随想录:
-      - projects/index.md
-      - 神舟医疗项目:
-          - Bug report: projects/shenzhou/bug.md
-          - modules:
-              - 出诊计划: projects/shenzhou/modules/schedule.md
-          - extensions:
-              - 前后端数据通信: projects/shenzhou/extensions/ajax_axios.md
-      - 图片: projects/image_solution.md
-      - 网络和存储: projects/network_storage.md
-      - 版本控制: projects/version_control.md
-      - 工欲善其事:
-          - projects/developerTool/index.md
-          - android studio: projects/developerTool/androidstudio.md
-          - ssh: projects/developerTool/ssh.md
   - Bug report:
       - ssh: bugs/ssh.md
       - react-router-dom: bugs/react-router-dom.md
   # - Feature request:
-  - Utils:
-      - utils/index.md
+  # - android studio: projects/developerTool/androidstudio.md
+  # - ssh: projects/developerTool/ssh.md
   - docs 定制化:
       - getting-start: custom/start.md
 
@@ -91,6 +99,7 @@ theme:
   icon:
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
+    logo: 'material/school'
   name: material
   static_templates:
     - 404.html
@@ -112,8 +121,8 @@ theme:
     # Palette toggle for light mode
     - media: '(prefers-color-scheme: light)'
       scheme: default
-      primary: indigo
-      accent: purple
+      primary: teal
+      accent: green
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -126,11 +135,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-
   favicon: 'favicon.ico'
-  icon:
-    logo: 'material/school'
-    # annotation: 'material/material/plus-circle'
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'

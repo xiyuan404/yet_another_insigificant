@@ -5,6 +5,13 @@
 
 }
 
+[data-md-color-accent=green] {
+  --md-accent-fg-color:  #33a06f;
+  --md-accent-fg-color--transparent: #42d392;
+  --md-accent-bg-color: #fff;
+  --md-accent-bg-color--light: #ffffffb3;
+}
+
 [data-md-color-accent=purple] {
   --md-accent-fg-color:rgb(145, 109, 213) ;
   --md-accent-fg-color--transparent: rgba(145, 109, 213, .2);

@@ -1,6 +1,6 @@
 # 搭建开发和调试环境
 
-> dev env & debug env set up
+> dev env & debug env set up to develop react app
 
 - 项目架构(monorepo)
 - 开发规范(lint、commit、style、pretty)
@@ -18,7 +18,7 @@ MonoRepo vs MultiRepo 该如何选择
 
 <span  style="font-size: 18px; display: inline-block; padding-left: 10px; border-left: 5px solid rgb(145, 109, 213);">Mono-repo 技术选型</span>
 
-包管理工具pnpm feature`workspace`:
+包管理工具 pnpm feature`workspace`:
 
 - [pnpm workspace](https://pnpm.io/installation)
 
@@ -31,15 +31,15 @@ npm i -g pnpm
 Now use pnpm to init a new `monoRepo` project in current folder
 
 ```bash
-pnpm init . 
+pnpm init .
 ```
 
-在初始化后的`package.json`中,修改配置如下:
+修改初始化后的项目配置文件`package.json`如下:
 
 ```json
 {
   "private": true, // not publish to npm registery
-  "module": "index.ts", // ESmodule module loading entry 
+  "module": "index.ts", // ESmodule module loading entry
   "type": "module", // Files ending with .js are loaded as ES modules when the nearest parent package.json file contains a top-level field "type" with a value of "module".
   "packageManager": "pnpm",
   "desc": "react公用方法"
@@ -49,11 +49,9 @@ pnpm init .
 新建配置文件`pnpm-workspace.yaml`,添加如下配置
 
 ```yaml
-packages: 
+packages:
 	- "pakcages/*"
 ```
-
-
 
 <span  style="font-size: 18px; display: inline-block; padding-left: 10px; border-left: 5px solid rgb(145, 109, 213);">开发规范</span>
 
@@ -151,9 +149,6 @@ pnpm i prettier -D -w
 pnpm i eslint-config-prettier eslint-plugin-prettier -D -w
 ```
 
-
-
-
 在根项目的`package.json`中,为`lint`增加对应的执行脚本, 并验证效果:
 
 ```bash
@@ -162,11 +157,13 @@ pnpm i eslint-config-prettier eslint-plugin-prettier -D -w
 
 <h3 style="text-align:center;  font-size: 20px;font-weight: bold;"><span style="border-bottom: 2px solid rgb(145, 109,213);">代码提交</span></h3>
 
-安装`husky`，用于拦截commit命令：
+安装`husky`，用于拦截 commit 命令：
+
 ```bash
 pnpm i husky -D -w
 ```
-初始化husky
+
+初始化 husky
 
 ```bash
 npx husky init
@@ -176,7 +173,7 @@ npx husky init
 
 ```bash
 - npx husky add ./husky/pre-commit "pnpm init"
-+ echo "pnpm lint" > .husky/pre-commit 
++ echo "pnpm lint" > .husky/pre-commit
 ```
 
 通过`commitlint`对 git 提交信息进行检查
@@ -222,7 +219,7 @@ git 提交格式：
 
 ![transpiler_tools](images/transpiler_tools.png)
 
-> "w/o" for "without"  "w/" was borrowed from this "w/" for "with"
+> "w/o" for "without" "w/" was borrowed from this "w/" for "with"
 
 新建配置文件`tsconfig.json`，添加如下配置：
 
@@ -255,6 +252,7 @@ git 提交格式：
 ![bundle_tools](images/bundle_tools.png)
 [不同打包工具比较](https://bundlers.tooling.report/)
 开发项目特点
+
 <ul style="list-style-type:circle; padding-left: 30px;">
   <li>是基建的库，而不是业务吸纳蒙古</li>
  <li>希望工具尽可能简洁、打包产物可读性高</li>

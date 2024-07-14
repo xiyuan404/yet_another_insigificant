@@ -1,5 +1,137 @@
 
 
+# Graphics programming
+
+
+
+>  it's *not* drawing/painting with the computer
+>
+>  it's *modeling* and *rendering*
+
+<embed src="images/Intro-CG-slides.pdf#zoom=0&scrollbar=1&toolbar=0&navpanes=0" type="application/pdf" width="100%" height="500px">
+
+
+## *What do we need to model* in order to render these graphical images?
+
+
+
+
+
+### maths underline those pretty pictures
+
+- algebra （代数）
+- geometry （几何学）
+- trigonometry (三角学)
+- calculus (微积分)
+- some linear algebra （一些线性代数）
+
+
+
+### rasing concepts
+
+- vertices 顶点
+- camera position  相机位置
+- camera direction  相机方向
+- image plane  像平面
+- *projection 投影*
+- reflection  反射
+- color  颜色
+
+These are the **fundamental concepts of computer graphics**:
+这些是计算机图形学的基本概念：
+
+- Object modeling 对象建模
+- Camera placement and shape of viewed region
+  相机位置和观察区域的形状
+- Material  材料
+- Lighting  灯光
+- Texture mapping  纹理映射
+- Modeling curves and surfaces
+  曲线和曲面建模
+- Animation  动画片
+
+
+
+## the graphic render pipeline
+
+Our software is going to construct a 3D model of our object or scene, typically as a collection of vertices, faces, surfaces, control points, and the like. These will be sent to the graphics card, which will *render* the scene as a raster image of pixels. These are written into the frame buffer, where they stay in order to drive the display.
+
+![Graphics3D_Hardware](images/Graphics3D_Hardware.png)
+
+![raster](images/raster.png)
+
+## before we get started with graphic programming
+
+ [test whether your browser supports WebGL](http://get.webgl.org/)
+
+
+
+[**WebGL**](https://registry.khronos.org/webgl/specs/latest/2.0/) This is a standard graphics API, a subset of the full OpenGL API that is supported by most graphics cards.
+
+[**Three.js**](http://threejs.org/) This is an API built on top of WebGL, doing a lot of the modeling and rendering for you. WebGL is still there, underneath, but we will rarely see it. Three.js is very powerful. It allows you to ignore a lot of detailed technical concepts in Computer Graphics that plain WebGL would force you to know, and the programming is far less work.
+
+
+
+
+
+## In Three.js, we build data structures of vertices and faces,
+
+
+
+
+
+- `triangles`we want *surfaces*, and the representation of a surface is often done by breaking it down into triangles
+
+![sphereApprox](images/sphereApprox.jpg)
+
+- Front and Back of Triangles
+- Normal Vectors
+
+## Drawing in Three.js
+
+> How do we draw stuff in Three.js? It's a two-step process: we *represent* something and then we *render* it
+
+Geometry 
+
+is a structure of vertices and faces and associated geometrical information, such as the vectors that specify the orientations of faces.
+
+Material 
+
+
+
+Meshes
+
+
+
+
+
+## Building a Geometry From Scratch
+
+**Step 1:** Create a new `THREE.Geometry` object and define its *vertices*:
+
+![barn_geometry](images/barn_geometry.png)
+
+```js
+var barnGeometry = new THREE.Geometry();
+// add vertices to the barnGeometry.vertices array -
+// indices of this array correspond to the above labels 
+barnGeometry.vertices.push(new THREE.Vector3(0, 0, 0));
+barnGeometry.vertices.push(new THREE.Vector3(30, 0, 0));
+barnGeometry.vertices.push(new THREE.Vector3(30, 40, 0));
+...
+```
+
+**Step 2:** Divide each object surface into *triangular faces*, and define each face using three vertex labels (indices of the `barnGeometry.vertices` array).
+
+![barn_faces](images/barn_faces.png)
+
+```
+// front side of each of these faces is outside the barn
+barnGeometry.faces.push(new THREE.Face3(0, 1, 2));
+barnGeometry.faces.push(new THREE.Face3(0, 2, 3));
+barnGeometry.faces.push(new THREE.Face3(3, 2, 4));
+...
+```
 
 
 
@@ -224,7 +356,19 @@ compatiable interface without adjustment for the code, plus missing feature
 
 
 
+
+
+> The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+
+
 ![bounding](images/bounding.png)
 
 
 
+
+
+[^course]: [berkely](https://cs184.eecs.berkeley.edu/sp24)
+[^course]: [standford](https://web.stanford.edu/class/cs148/index.html)
+[^course]: [CMU 15-462/15-662](http://15462.courses.cs.cmu.edu/spring2023/lecture/intro)
+[^book]:[Learning Modern 3D Graphics Programming](https://paroj.github.io/gltut/)

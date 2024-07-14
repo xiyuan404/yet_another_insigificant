@@ -1,6 +1,3 @@
-Avatar
-YaoLin
-
 <head>
   <style>
     :root {
@@ -91,7 +88,7 @@ YaoLin
     <span class="checkbox"> <input type="checkbox" checked/> </span>
     <span> react/servelt/vue/solidty.js </span>
   </label>
-  
+
 
   <label class="checkbox-wrapper">
     <span class="checkbox"> <input type="checkbox"/> </span>
