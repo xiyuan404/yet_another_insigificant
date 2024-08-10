@@ -5,8 +5,8 @@ site_author: ayao
 site_url: https://yet-another-insignficant.xyz
 
 # Repositroy
-repo_name: 'yet-another-insignficant'
-repo_url: 'https://github.com/gearless-joeeee/yet_another_insigificant...'
+repo_name: "yet-another-insignficant"
+repo_url: "https://github.com/gearless-joeeee/yet_another_insigificant..."
 # edit_uri: 'https://github.com/gearless-joeeee/yet_another_insigificant.../edit-landing/?ref='
 
 # Copyright
@@ -20,17 +20,20 @@ nav:
       - index.md
       - awesome blog: awesome-blog.md
   - Javascript内功修炼:
-      - javascript/index.md
-      - 执行上下文: javascript/execution_context.md
-      - 原型继承: javascript/prototype.md
-      - 异步编程: javascript/async.md
-      - 垃圾回收: javascript/garbage_collection.md
-      - 事件循环: javascript/event_loop.md
-      - es6+: javascript/es6+.md
-      - for loop: javascript/for-loop.md
-      - 响应式: javascript/responsive.md
-      - event: javascript/event.md
-      - native utils polyfill 实现: javascript/utils.md
+      - JS/index.md
+      - JS/utils.md
+      - 执行上下文: JS/execution_context.md
+      - 原型继承: JS/prototype.md
+      - 异步编程: JS/async.md
+      - 垃圾回收: JS/garbage_collection.md
+      - 事件循环: JS/event_loop.md
+      - es6+: JS/es6+.md
+      - for loop: JS/for-loop.md
+      - 响应式: JS/responsive.md
+      - event: JS/event.md
+      - native utils polyfill 实现: JS/utils.md
+      - layout.md
+      - module.md
   - datav:
       - d3: datav/d3.md
   - webGL:
@@ -45,6 +48,14 @@ nav:
       - webRTC/index.md
   - webGIS:
       - webGIS/index.md
+  - 工程化落地:
+      - tool-chain/cli.md
+      - tool-chain/npm.md
+      - tool-chain/index.md
+      - tool-chain/cors.md
+      - tool-chain/babel.md
+      - tool-chain/webpack.md
+      - tool-chain/resource-loading.md
   - 跨端开发实战:
       - crossplatform/index.md
   - 项目随想录:
@@ -52,6 +63,7 @@ nav:
       - 大文件上传: projects/file-upload.md
       - 缓存和视图: projects/buffer-and-view.md
       - symbol: projects/symbol.md
+      - 第三方库集成: projects/3rd-party-integration.md
       - 图片: projects/image_solution.md
       - 网络和存储: projects/network_storage.md
       - 版本控制: projects/version_control.md
@@ -60,6 +72,14 @@ nav:
       - devtools/markdown.md
       - devtools/vscode.md
       - devtools/vim.md
+      - devtools/cli.md
+
+  - 走向全栈:
+      - node/index.md
+      - node/cookie.md
+      - node/mongodb.md
+  - web安全:
+      - security/security.md
   - Vue源码解读: vue/index.md
   - React源码解读:
       - jsx: react/jsx.md
@@ -68,8 +88,7 @@ nav:
       - JSX转换: react/jsx-transpile.md
       - 初探reconciler: react/reconciler.md
       - 如何触发更新: react/update.md
-  - 前端工程化: engineer/index.md
-  - 性能调优: performance/index.md
+
   - 前端框架生态库: ecosystem/index.md
   - 设计模式和系统架构: design/index.md
   - 数据结构与算法: algorithm/index.md
@@ -99,11 +118,11 @@ theme:
   icon:
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
-    logo: 'material/school'
+    logo: "material/school"
   name: material
   static_templates:
     - 404.html
-  language: 'zh'
+  language: "zh"
   features:
     - content.tabs.link
     - content.action.edit
@@ -119,7 +138,7 @@ theme:
     - navigation.top
   palette:
     # Palette toggle for light mode
-    - media: '(prefers-color-scheme: light)'
+    - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: teal
       accent: green
@@ -128,17 +147,17 @@ theme:
         name: Switch to dark mode
 
     # Palette toggle for dark mode
-    - media: '(prefers-color-scheme: dark)'
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue
       accent: blue
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-  favicon: 'favicon.ico'
+  favicon: "favicon.ico"
   font:
-    text: 'Fira Sans'
-    code: 'Fira Mono'
+    text: "Fira Sans"
+    code: "Fira Mono"
 
 plugins:
   - social
@@ -166,7 +185,7 @@ markdown_extensions:
   - footnotes
   - meta
   - toc:
-      permalink: ''
+      permalink: ""
       title: On this page
   - pymdownx.arithmatex:
       generic: true

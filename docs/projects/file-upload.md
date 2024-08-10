@@ -1,5 +1,7 @@
-## 2.大文件上传面试题
+- [代码仓库地址](https://github.com/xiyuan404/bigfiles-upload)
+- [演示地址](https://bfiles-upload-244ezz4bu-ayaos-projects.vercel.app/)
 
+## 2.大文件上传面试题
 1. 基础概念
    - 描述实现大文件上传的基本流程
    - 解释为什么大文件上传比普通文件上传更具有挑战性

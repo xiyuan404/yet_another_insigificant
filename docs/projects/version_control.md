@@ -1,7 +1,84 @@
-Friday, Mar 13 2024
-# releases codeNmae
+[code repository]()
 
-android conceived using a confectionery-themed naming scheme for public releases, 
+## git "way of thinking"
+
+startup file strcture
+```bash
+.git
+COPYRIGHT
+```
+
+
+### moving data from left to right
+
+move data from working area -> stage area
+git diff
+git add
+
+move data from stage area -> repository
+git diff --cached
+git commit
+
+
+### moving data from right to left
+
+
+delete files add to stage area : `git rm --cached`
+
+```bash
+➜ cat COPYRIGHT
+@copyright by xiyuan
+➜ git add COPYRIGHT
+➜ git status
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   COPYRIGHT
+➜ git rm --cached COPYRIGHT
+rm 'COPYRIGHT'
+➜ git status
+untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	COPYRIGHT
+```
+
+delete files add to working are: `rm COPYRIGHT`
+
+
+
+
+renaming file
+```bash
+➜ mv README.txt README.md
+➜ git status
+Untracked files:
+	README.md
+```
+
+
+
+
+```bash
+➜ git mv README.text -> README.md
+Changes to be committed:
+    renamed: README.txt -> README.md
+```
+
+
+## move branch
+`git reset --soft`: don't copy
+`git reset --mixed`: default, copy data from repo -> index
+`git reset --hard`: copy data from repo -> index and working area
+
+`git reset --mixed head`: unstage change in stage area
+`git reset --hard head` : overwrite both working and stage with the cotent of head point commit
+
+
+
+
+
+[^releases codeNmae]: android releases codename
+
+
 
 ??? note "android release codename"
     | Codename           | Version       | API level/NDK release |

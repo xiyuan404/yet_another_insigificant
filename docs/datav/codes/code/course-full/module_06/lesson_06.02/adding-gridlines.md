@@ -51,7 +51,7 @@ d3.timeMonth.floor(new Date())
 
 ![d3.timeMonth.floor() example](./public/images/11-radar-weather-chart/timeMonth-example.png)
 
-d3 time intervals also have a `.range()` method that will return a list of datetime objects, spaced by the specified interval, between two dates, passed as parameters.
+d3 time intervals also have a `.range()` method that will return a list of ndatetime objects, spaced by the specified interval, between two dates, passed as parameters.
 
 Let's try it out by creating our list of months!
 
