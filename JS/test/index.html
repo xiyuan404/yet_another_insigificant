@@ -1,0 +1,4360 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="coder, try to be engineer here, we share thoughts worth sharing, xiyuan as my dev community name">
+      
+      
+        <meta name="author" content="ayao">
+      
+      
+        <link rel="canonical" href="https://yet-another-insignficant.xyz/JS/test/">
+      
+      
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Test - shot for the moon</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CFira+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Test - shot for the moon" >
+      
+        <meta  property="og:description"  content="coder, try to be engineer here, we share thoughts worth sharing, xiyuan as my dev community name" >
+      
+        <meta  property="og:image"  content="https://yet-another-insignficant.xyz/assets/images/social/JS/test.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://yet-another-insignficant.xyz/JS/test/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Test - shot for the moon" >
+      
+        <meta  name="twitter:description"  content="coder, try to be engineer here, we share thoughts worth sharing, xiyuan as my dev community name" >
+      
+        <meta  name="twitter:image"  content="https://yet-another-insignficant.xyz/assets/images/social/JS/test.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="shot for the moon" class="md-header__button md-logo" aria-label="shot for the moon" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            shot for the moon
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Test
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/gearless-joeeee/yet_another_insigificant..." title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yet-another-insignficant
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../biograph/" class="md-tabs__link">
+          
+  
+    
+  
+  YaoLin
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  Javascript内功修炼
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../datav/d3/" class="md-tabs__link">
+          
+  
+    
+  
+  datav
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../WebGL/index.md" class="md-tabs__link">
+          
+  
+    
+  
+  webGL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../webRTC/" class="md-tabs__link">
+          
+  
+    
+  
+  webRTC
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../webGIS/" class="md-tabs__link">
+          
+  
+    
+  
+  webGIS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tool-chain/cli/" class="md-tabs__link">
+          
+  
+    
+  
+  工程化落地
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../crossplatform/" class="md-tabs__link">
+          
+  
+    
+  
+  跨端开发实战
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projects/" class="md-tabs__link">
+          
+  
+    
+  
+  项目随想录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../devtools/" class="md-tabs__link">
+          
+  
+    
+  
+  工欲善其事
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../node/" class="md-tabs__link">
+          
+  
+    
+  
+  走向全栈
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../security/security/" class="md-tabs__link">
+          
+  
+    
+  
+  web安全
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../vue/" class="md-tabs__link">
+        
+  
+    
+  
+  Vue源码解读
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../react/jsx/" class="md-tabs__link">
+          
+  
+    
+  
+  React源码解读
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ecosystem/index.md" class="md-tabs__link">
+        
+  
+    
+  
+  前端框架生态库
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../design/" class="md-tabs__link">
+        
+  
+    
+  
+  设计模式和系统架构
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../algorithm/" class="md-tabs__link">
+        
+  
+    
+  
+  数据结构与算法
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../bugs/ssh/" class="md-tabs__link">
+          
+  
+    
+  
+  Bug report
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../custom/start/" class="md-tabs__link">
+          
+  
+    
+  
+  docs 定制化
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="shot for the moon" class="md-nav__button md-logo" aria-label="shot for the moon" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    shot for the moon
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/gearless-joeeee/yet_another_insigificant..." title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yet-another-insignficant
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    YaoLin
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            YaoLin
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biograph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Biograph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../awesome-blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    awesome blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    归档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Javascript内功修炼
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Javascript内功修炼
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../execution_context/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    执行上下文
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototype/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    原型继承
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../async/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    异步编程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../garbage_collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    垃圾回收
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../event_loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    事件循环
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../es6%2B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    es6+
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../for-loop.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    for loop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responsive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    响应式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    event
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layout.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    datav
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            datav
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datav/d3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    d3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    webGL
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            webGL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WebGL/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WebGL/spotlight.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    spotlight
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WebGL/animation.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WebGL/interaction.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    interaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WebGL/camera.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    camera
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WebGL/light.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    light
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WebGL/integrate.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    integrate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../webRTC/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    webRTC
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            webRTC
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../webGIS/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    webGIS
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            webGIS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tool-chain/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    工程化落地
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            工程化落地
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-chain/cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-chain/npm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    npm cli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-chain/cors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-chain/babel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Babel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-chain/webpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    wepack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-chain/resource-loading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resource loading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../crossplatform/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    跨端开发实战
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            跨端开发实战
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../projects/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    项目随想录
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            项目随想录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/file-upload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大文件上传
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/buffer-and-view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    缓存和视图
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/symbol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    symbol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/3rd-party-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第三方库集成
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/image_solution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图片
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/network_storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    网络和存储
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/version_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    版本控制
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../devtools/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    工欲善其事
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            工欲善其事
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devtools/markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devtools/vscode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vscode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devtools/vim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vim
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devtools/cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../node/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    走向全栈
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            走向全栈
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/cookie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/mongodb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mongodb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    web安全
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            web安全
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    web安全渗透测试
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vue源码解读
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../react/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    React源码解读
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_15" id="__nav_15_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            React源码解读
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react/jsx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jsx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    环境搭建
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react/jsx-transpile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSX转换
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react/reconciler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    初探reconciler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react/update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    如何触发更新
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecosystem/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前端框架生态库
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    设计模式和系统架构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构与算法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bug report
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19">
+            <span class="md-nav__icon md-icon"></span>
+            Bug report
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bugs/ssh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ssh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bugs/react-router-dom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    react-router-dom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    docs 定制化
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_20">
+            <span class="md-nav__icon md-icon"></span>
+            docs 定制化
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../custom/start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    getting-start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/gearless-joeeee/yet_another_insigificant.../edit/master/docs/JS/test.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710294857314-ae05ef9d-ecb6-493a-adc7-307ef4434278.png" /></p>
+<h1 id="1">1. 项目简介<a class="headerlink" href="#1" title="Permanent link"></a></h1>
+<p>该App的核心功能是辅助单词记忆，主要分为三个功能模块，如下图所示</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>答题模块</th>
+<th>打卡圈</th>
+<th>个人中心</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>图示</td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710206541209-65d123b6-d554-4d40-9046-1ce377454223.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710206872433-cb3a881f-0ff5-4d79-8a8d-3f8dddb0b79b.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710206895812-a1ef99e5-91b9-4e55-b143-1e98b749f93f.png" /></td>
+</tr>
+<tr>
+<td>功能</td>
+<td>答题、统计、打卡</td>
+<td>打卡列表、点赞</td>
+<td>登录、退出登录、个人打卡记录</td>
+</tr>
+</tbody>
+</table>
+<p>下面逐一完成每个模块</p>
+<h1 id="2">2. 答题页面<a class="headerlink" href="#2" title="Permanent link"></a></h1>
+<h2 id="21">2.1. 功能简介<a class="headerlink" href="#21" title="Permanent link"></a></h2>
+<p>答题页面共有三个练习状态，分别是<strong>答题状态</strong>、<strong>暂停状态</strong>和<strong>停止状态</strong>。初始状态为<strong>停止状态</strong>，<strong>停止状态</strong>下不可答题，此时点击答案选项，需要给出提示，如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710205461740-17ed9b3b-25bc-44bd-adc6-1d20b72c99a3.png" /></p>
+<p>在<strong>停止</strong>状态下，可以修改测试的单词个数（其余状态下均不可修改），如下图所示。个数修改后，需要从题库中重新抽取相应个数的题目。</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710205608650-c51b50ba-10b9-4236-9efd-8524f10919f3.png" /></p>
+<p>点击<strong>开始测试</strong>按钮即可进入<strong>答题</strong>状态，此时，计时器开始计时，</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710208514322-ae78bc18-bf10-4c47-9d48-738d41e3a2ec.png" /></p>
+<p>答题操作的逻辑如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710226354980-e031ed6a-6cce-43cd-89bb-79600b234ffc.png" /></p>
+<p>答题过程中需要实时更新统计信息，统计指标包括<strong>进度</strong>和<strong>准确率</strong>，如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710208374679-ac7879f5-bd72-404c-9cc5-867096db5744.png" /></p>
+<p>答题过程中点击<strong>暂停测试</strong>按钮可进入<strong>暂停状态</strong>，<strong>暂停状态</strong>下，计时器停止计时。</p>
+<p>再次点击<strong>开始测试</strong>，重新进入<strong>答题状态</strong>，计时器恢复计时。</p>
+<p>当本轮测试题目全部完成或者提前点击<strong>结束测试</strong>按钮，进入<strong>停止状态</strong>，并弹窗显示统计结果，如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710208801009-4f23eab1-de38-4c95-9b30-4b805d69b9a6.png" /></p>
+<p>此时，</p>
+<p>点击右上角<strong>关闭</strong>按钮，弹窗关闭，同时测试题目和统计信息重置，答题页面回到初始状态。</p>
+<p>点击<strong>再来一局</strong>按钮，弹窗关闭，同时测试题目和统计信息重置，然后直接进入答题状态。</p>
+<p>点击<strong>登录打卡</strong>按钮，弹窗关闭，同时测试题目和统计信息重置，然后跳转到到登录页面。</p>
+<h2 id="22">2.2. 实现思路<a class="headerlink" href="#22" title="Permanent link"></a></h2>
+<h3 id="221">2.2.1. 所需技能<a class="headerlink" href="#221" title="Permanent link"></a></h3>
+<p>答题模块所需技能如下</p>
+<ol>
+<li>常用布局的使用：<strong>Column</strong>、<strong>Row</strong><strong>等等</strong></li>
+<li>常用组件的使用：<strong>Progress</strong>、<strong>Button</strong>、<strong>Image</strong>、<strong>Text</strong>、<strong>TextTimmer</strong>（计时器）等等</li>
+<li>自定义组件</li>
+<li>自定义弹窗</li>
+<li>组件状态管理：<strong>@State</strong>、<strong>@Prop</strong>、<strong>@Link</strong>、<strong>@Watch</strong>等等</li>
+</ol>
+<p>上述内容可参考<a href="https://www.yuque.com/danny-sroga/gaguqh/qg2n2d5o04iu1gsm">HarmonyOS 4.0 应用开发</a>中的第3、4、5章。</p>
+<h3 id="222">2.2.2. 实现过程<a class="headerlink" href="#222" title="Permanent link"></a></h3>
+<h4 id="2221">2.2.2.1. 基础布局和样式<a class="headerlink" href="#2221" title="Permanent link"></a></h4>
+<p>答题页面的基本布局如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710212305889-0ffe6a1f-4623-4f88-8ee6-cf52b77c3986.png" /></p>
+<p>各组件样式如下</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>样式</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>页面背景</td>
+<td><code>@Extend(Column) function practiceBgStyle() {  .width('100%')  .height('100%')  .backgroundImage($r('app.media.img_practice_bg'))  .backgroundImageSize({ width: '100%', height: '100%' })  .justifyContent(FlexAlign.SpaceEvenly) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710213425060-93660f1f-40f2-4140-982d-a62d8d1bedc6.png" /></td>
+</tr>
+<tr>
+<td>统计面板背景</td>
+<td><code>@Styles function statBgStyle() {  .backgroundColor(Color.White)  .width('90%')  .borderRadius(10)  .padding(20) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710213765984-4ad6e072-03d0-4d42-a6bb-9b2d8a91a23c.png" /></td>
+</tr>
+<tr>
+<td>单词</td>
+<td><code>@Extend(Text) function wordStyle() {  .fontSize(50)  .fontWeight(FontWeight.Bold) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710213907808-e5ae77b8-93c2-405e-a444-83a1ccd7a191.png" /></td>
+</tr>
+<tr>
+<td>例句</td>
+<td><code>@Extend(Text) function sentenceStyle() {  .height(40)  .fontSize(16)  .fontColor('#9BA1A5')  .fontWeight(FontWeight.Medium)  .width('80%')  .textAlign(TextAlign.Center) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710213915500-609ccf70-d161-4199-8d5f-9b989d90075e.png" /></td>
+</tr>
+<tr>
+<td>选项按钮</td>
+<td><code>@Extend(Button) function optionButtonStyle(color: {  bg: ResourceColor,  font: ResourceColor }) {  .width(240)  .height(48)  .fontSize(16)  .type(ButtonType.Normal)  .fontWeight(FontWeight.Medium)  .borderRadius(8)  .backgroundColor(color.bg)  .fontColor(color.font) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710214260252-b101b4b7-1807-402f-85a2-182c0e8fc123.png" /></td>
+</tr>
+<tr>
+<td>控制按钮</td>
+<td><code>@Extend(Button) function controlButtonStyle(color: {  bg: ResourceColor,  border: ResourceColor,  font: ResourceColor }) {  .fontSize(16)  .borderWidth(1)  .backgroundColor(color.bg)  .borderColor(color.border)  .fontColor(color.font) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710214546032-ac6d060b-4d26-4454-a4fa-0d5eb98ec4c1.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="2222">2.2.2.2. 练习状态<a class="headerlink" href="#2222" title="Permanent link"></a></h4>
+<p>练习状态共有三个分别是<strong>答题状态</strong>、<strong>暂停状态</strong>和<strong>停止状态</strong>，我们可以定义一个枚举类型来表示三个状态，如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>export enum PracticeStatus {
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  Running, //答题状态
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  Paused, //暂停状态
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  Stopped //停止状态
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>}
+</code></pre></div>
+<p>之后定义一个上述枚举类型的状态变量表示当前所处的练习状态，如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>@State practiceStatus: PracticeStatus = PracticeStatus.Stopped
+</code></pre></div>
+<p>练习状态的控制通过底部的两个控制按钮实现，需要注意的是两个按钮在不同的状态下也应呈现不同的样式，如下图</p>
+<table>
+<thead>
+<tr>
+<th>练习状态</th>
+<th>停止状态</th>
+<th>答题状态</th>
+<th>暂停状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>效果</td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710232764418-2d893647-ee56-4c6b-940e-a4e5bc93948d.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710232803652-315a4f27-5cf4-4486-a4b7-119d6df0416d.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710232831163-8ba6a52b-3a48-4f1c-9467-6fef5a727a20.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>具体内容可参考如下代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Button(&#39;停止测试&#39;)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  .controlButtonStyle({
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    bg: Color.Transparent,
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    border: this.practiceStatus === PracticeStatus.Stopped ? Color.Gray : Color.Black,
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    font: this.practiceStatus === PracticeStatus.Stopped ? Color.Gray : Color.Black
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  })
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  .enabled(this.practiceStatus !== PracticeStatus.Stopped)
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>Button(this.practiceStatus === PracticeStatus.Running ? &#39;暂停测试&#39; : &#39;开始测试&#39;)
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>  .controlButtonStyle({
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    bg: this.practiceStatus === PracticeStatus.Running ? &#39;#555555&#39; : Color.Black,
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    border: this.practiceStatus === PracticeStatus.Running ? &#39;#555555&#39; : Color.Black,
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    font: Color.White
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>  })
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>  .stateEffect(false)
+</code></pre></div>
+<p>另外还需为两个按钮绑定点击事件，来处理练习状态的变化。</p>
+<h4 id="2223">2.2.2.3. 切题逻辑<a class="headerlink" href="#2223" title="Permanent link"></a></h4>
+<p>切题效果通过两个状态变量实现，一个是题目数组，一个是数组索引，数组保存的是本轮测试的全部题目，索引是指当前题目的索引，如下图所示，只需修改currentIndex，就能实现切题的效果</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710215674873-8e2162b8-3528-46b2-adec-7d11bbb0e528.png" /></p>
+<p>题目数据的类型定义如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>export interface Question {
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  word: string; //单词
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  sentence: string; //例句
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  options: string[]; //选项
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  answer: string; //答案
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>}
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>//题库
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>export const questionData: Question[] = [
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  {
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    word: &quot;book&quot;,
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    options: [&quot;书籍&quot;, &quot;笔&quot;, &quot;橡皮&quot;, &quot;背包&quot;],
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    answer: &quot;书籍&quot;,
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    sentence: &quot;I love to read a good book every night.&quot;
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>  },
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>  {
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    word: &quot;computer&quot;,
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    options: [&quot;电视&quot;, &quot;电脑&quot;, &quot;手机&quot;, &quot;相机&quot;],
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    answer: &quot;电脑&quot;,
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    sentence: &quot;I use the computer for work and entertainment.&quot;
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>  },
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  {
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    word: &quot;apple&quot;,
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    options: [&quot;香蕉&quot;, &quot;桃子&quot;, &quot;梨&quot;, &quot;苹果&quot;],
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>    answer: &quot;苹果&quot;,
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>    sentence: &quot;She enjoys eating a crisp apple in the afternoon.&quot;
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>  },
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>  {
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    word: &quot;sun&quot;,
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    options: [&quot;月亮&quot;, &quot;太阳&quot;, &quot;星星&quot;, &quot;地球&quot;],
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>    answer: &quot;太阳&quot;,
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    sentence: &quot;The sun provides warmth and light to our planet.&quot;
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>  },
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>  {
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>    word: &quot;water&quot;,
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>    options: [&quot;火&quot;, &quot;土地&quot;, &quot;风&quot;, &quot;水&quot;],
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>    answer: &quot;水&quot;,
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>    sentence: &quot;I always carry a bottle of water with me.&quot;
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>  },
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>  {
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>    word: &quot;mountain&quot;,
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>    options: [&quot;沙漠&quot;, &quot;海洋&quot;, &quot;平原&quot;, &quot;山&quot;],
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>    answer: &quot;山&quot;,
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>    sentence: &quot;The mountain range is covered in snow during winter.&quot;
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>  },
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>  {
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>    word: &quot;flower&quot;,
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>    options: [&quot;树木&quot;, &quot;草地&quot;, &quot;花&quot;, &quot;灌木&quot;],
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>    answer: &quot;花&quot;,
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>    sentence: &quot;The garden is filled with colorful flowers.&quot;
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>  },
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>  {
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>    word: &quot;car&quot;,
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>    options: [&quot;自行车&quot;, &quot;飞机&quot;, &quot;船&quot;, &quot;汽车&quot;],
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>    answer: &quot;汽车&quot;,
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>    sentence: &quot;I drive my car to work every day.&quot;
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a>  },
+<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>  {
+<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a>    word: &quot;time&quot;,
+<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>    options: [&quot;空间&quot;, &quot;时钟&quot;, &quot;日历&quot;, &quot;时间&quot;],
+<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>    answer: &quot;时间&quot;,
+<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a>    sentence: &quot;Time flies when you&#39;re having fun.&quot;
+<a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a>  },
+<a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>  {
+<a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a>    word: &quot;music&quot;,
+<a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a>    options: [&quot;画&quot;, &quot;舞蹈&quot;, &quot;音乐&quot;, &quot;戏剧&quot;],
+<a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a>    answer: &quot;音乐&quot;,
+<a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a>    sentence: &quot;Listening to music helps me relax.&quot;
+<a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a>  },
+<a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a>  {
+<a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a>    word: &quot;rain&quot;,
+<a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a>    options: [&quot;雪&quot;, &quot;雷电&quot;, &quot;阳光&quot;, &quot;雨&quot;],
+<a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a>    answer: &quot;雨&quot;,
+<a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a>    sentence: &quot;I enjoy the sound of rain tapping on the window.&quot;
+<a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a>  },
+<a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a>  {
+<a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a>    word: &quot;fire&quot;,
+<a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a>    options: [&quot;冰&quot;, &quot;火焰&quot;, &quot;烟雾&quot;, &quot;闪电&quot;],
+<a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a>    answer: &quot;火焰&quot;,
+<a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a>    sentence: &quot;The campfire warmed us on a chilly evening.&quot;
+<a id="__codelineno-3-81" name="__codelineno-3-81" href="#__codelineno-3-81"></a>  },
+<a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a>  {
+<a id="__codelineno-3-83" name="__codelineno-3-83" href="#__codelineno-3-83"></a>    word: &quot;friend&quot;,
+<a id="__codelineno-3-84" name="__codelineno-3-84" href="#__codelineno-3-84"></a>    options: [&quot;陌生人&quot;, &quot;邻居&quot;, &quot;家人&quot;, &quot;朋友&quot;],
+<a id="__codelineno-3-85" name="__codelineno-3-85" href="#__codelineno-3-85"></a>    answer: &quot;朋友&quot;,
+<a id="__codelineno-3-86" name="__codelineno-3-86" href="#__codelineno-3-86"></a>    sentence: &quot;A true friend is always there for you.&quot;
+<a id="__codelineno-3-87" name="__codelineno-3-87" href="#__codelineno-3-87"></a>  },
+<a id="__codelineno-3-88" name="__codelineno-3-88" href="#__codelineno-3-88"></a>  {
+<a id="__codelineno-3-89" name="__codelineno-3-89" href="#__codelineno-3-89"></a>    word: &quot;food&quot;,
+<a id="__codelineno-3-90" name="__codelineno-3-90" href="#__codelineno-3-90"></a>    options: [&quot;水果&quot;, &quot;蔬菜&quot;, &quot;肉&quot;, &quot;食物&quot;],
+<a id="__codelineno-3-91" name="__codelineno-3-91" href="#__codelineno-3-91"></a>    answer: &quot;食物&quot;,
+<a id="__codelineno-3-92" name="__codelineno-3-92" href="#__codelineno-3-92"></a>    sentence: &quot;Healthy food is essential for a balanced diet.&quot;
+<a id="__codelineno-3-93" name="__codelineno-3-93" href="#__codelineno-3-93"></a>  },
+<a id="__codelineno-3-94" name="__codelineno-3-94" href="#__codelineno-3-94"></a>  {
+<a id="__codelineno-3-95" name="__codelineno-3-95" href="#__codelineno-3-95"></a>    word: &quot;color&quot;,
+<a id="__codelineno-3-96" name="__codelineno-3-96" href="#__codelineno-3-96"></a>    options: [&quot;黑色&quot;, &quot;白色&quot;, &quot;红色&quot;, &quot;颜色&quot;],
+<a id="__codelineno-3-97" name="__codelineno-3-97" href="#__codelineno-3-97"></a>    answer: &quot;颜色&quot;,
+<a id="__codelineno-3-98" name="__codelineno-3-98" href="#__codelineno-3-98"></a>    sentence: &quot;The artist used a vibrant color palette.&quot;
+<a id="__codelineno-3-99" name="__codelineno-3-99" href="#__codelineno-3-99"></a>  },
+<a id="__codelineno-3-100" name="__codelineno-3-100" href="#__codelineno-3-100"></a>  {
+<a id="__codelineno-3-101" name="__codelineno-3-101" href="#__codelineno-3-101"></a>    word: &quot;bookshelf&quot;,
+<a id="__codelineno-3-102" name="__codelineno-3-102" href="#__codelineno-3-102"></a>    options: [&quot;椅子&quot;, &quot;桌子&quot;, &quot;书架&quot;, &quot;床&quot;],
+<a id="__codelineno-3-103" name="__codelineno-3-103" href="#__codelineno-3-103"></a>    answer: &quot;书架&quot;,
+<a id="__codelineno-3-104" name="__codelineno-3-104" href="#__codelineno-3-104"></a>    sentence: &quot;The bookshelf is filled with novels and reference books.&quot;
+<a id="__codelineno-3-105" name="__codelineno-3-105" href="#__codelineno-3-105"></a>  },
+<a id="__codelineno-3-106" name="__codelineno-3-106" href="#__codelineno-3-106"></a>  {
+<a id="__codelineno-3-107" name="__codelineno-3-107" href="#__codelineno-3-107"></a>    word: &quot;moon&quot;,
+<a id="__codelineno-3-108" name="__codelineno-3-108" href="#__codelineno-3-108"></a>    options: [&quot;太阳&quot;, &quot;星星&quot;, &quot;月亮&quot;, &quot;地球&quot;],
+<a id="__codelineno-3-109" name="__codelineno-3-109" href="#__codelineno-3-109"></a>    answer: &quot;月亮&quot;,
+<a id="__codelineno-3-110" name="__codelineno-3-110" href="#__codelineno-3-110"></a>    sentence: &quot;The moonlight illuminated the night sky.&quot;
+<a id="__codelineno-3-111" name="__codelineno-3-111" href="#__codelineno-3-111"></a>  },
+<a id="__codelineno-3-112" name="__codelineno-3-112" href="#__codelineno-3-112"></a>  {
+<a id="__codelineno-3-113" name="__codelineno-3-113" href="#__codelineno-3-113"></a>    word: &quot;school&quot;,
+<a id="__codelineno-3-114" name="__codelineno-3-114" href="#__codelineno-3-114"></a>    options: [&quot;公园&quot;, &quot;商店&quot;, &quot;医院&quot;, &quot;学校&quot;],
+<a id="__codelineno-3-115" name="__codelineno-3-115" href="#__codelineno-3-115"></a>    answer: &quot;学校&quot;,
+<a id="__codelineno-3-116" name="__codelineno-3-116" href="#__codelineno-3-116"></a>    sentence: &quot;Students go to school to learn and grow.&quot;
+<a id="__codelineno-3-117" name="__codelineno-3-117" href="#__codelineno-3-117"></a>  },
+<a id="__codelineno-3-118" name="__codelineno-3-118" href="#__codelineno-3-118"></a>  {
+<a id="__codelineno-3-119" name="__codelineno-3-119" href="#__codelineno-3-119"></a>    word: &quot;shoes&quot;,
+<a id="__codelineno-3-120" name="__codelineno-3-120" href="#__codelineno-3-120"></a>    options: [&quot;帽子&quot;, &quot;衣服&quot;, &quot;裤子&quot;, &quot;鞋子&quot;],
+<a id="__codelineno-3-121" name="__codelineno-3-121" href="#__codelineno-3-121"></a>    answer: &quot;鞋子&quot;,
+<a id="__codelineno-3-122" name="__codelineno-3-122" href="#__codelineno-3-122"></a>    sentence: &quot;She bought a new pair of stylish shoes.&quot;
+<a id="__codelineno-3-123" name="__codelineno-3-123" href="#__codelineno-3-123"></a>  },
+<a id="__codelineno-3-124" name="__codelineno-3-124" href="#__codelineno-3-124"></a>  {
+<a id="__codelineno-3-125" name="__codelineno-3-125" href="#__codelineno-3-125"></a>    word: &quot;camera&quot;,
+<a id="__codelineno-3-126" name="__codelineno-3-126" href="#__codelineno-3-126"></a>    options: [&quot;电视&quot;, &quot;电脑&quot;, &quot;相机&quot;, &quot;手机&quot;],
+<a id="__codelineno-3-127" name="__codelineno-3-127" href="#__codelineno-3-127"></a>    answer: &quot;相机&quot;,
+<a id="__codelineno-3-128" name="__codelineno-3-128" href="#__codelineno-3-128"></a>    sentence: &quot;The photographer captured the moment with his camera.&quot;
+<a id="__codelineno-3-129" name="__codelineno-3-129" href="#__codelineno-3-129"></a>  }
+<a id="__codelineno-3-130" name="__codelineno-3-130" href="#__codelineno-3-130"></a>]
+<a id="__codelineno-3-131" name="__codelineno-3-131" href="#__codelineno-3-131"></a>
+<a id="__codelineno-3-132" name="__codelineno-3-132" href="#__codelineno-3-132"></a>//从题库中随机抽取n个题目
+<a id="__codelineno-3-133" name="__codelineno-3-133" href="#__codelineno-3-133"></a>export function getRandomQuestions(count: number) {
+<a id="__codelineno-3-134" name="__codelineno-3-134" href="#__codelineno-3-134"></a>  let length = questionData.length;
+<a id="__codelineno-3-135" name="__codelineno-3-135" href="#__codelineno-3-135"></a>
+<a id="__codelineno-3-136" name="__codelineno-3-136" href="#__codelineno-3-136"></a>  let indexes: number[] = [];
+<a id="__codelineno-3-137" name="__codelineno-3-137" href="#__codelineno-3-137"></a>  while (indexes.length &lt; count) {
+<a id="__codelineno-3-138" name="__codelineno-3-138" href="#__codelineno-3-138"></a>    let index = Math.floor(Math.random() * length);
+<a id="__codelineno-3-139" name="__codelineno-3-139" href="#__codelineno-3-139"></a>    if (!indexes.includes(index)) {
+<a id="__codelineno-3-140" name="__codelineno-3-140" href="#__codelineno-3-140"></a>      indexes.push(index)
+<a id="__codelineno-3-141" name="__codelineno-3-141" href="#__codelineno-3-141"></a>    }
+<a id="__codelineno-3-142" name="__codelineno-3-142" href="#__codelineno-3-142"></a>  }
+<a id="__codelineno-3-143" name="__codelineno-3-143" href="#__codelineno-3-143"></a>  return indexes.map(index =&gt; questionData[index])
+<a id="__codelineno-3-144" name="__codelineno-3-144" href="#__codelineno-3-144"></a>}
+</code></pre></div>
+<p><strong>注意：</strong>切换题目时需要考虑延时切换，并且在延时的这段时间内，选项按钮应该处在不可用的状态。</p>
+<h4 id="2224">2.2.2.4. 判断正误<a class="headerlink" href="#2224" title="Permanent link"></a></h4>
+<p>判断正误的逻辑相对比较复杂，下面逐步实现</p>
+<p><strong>第一步：自定义选项按钮组件</strong></p>
+<p>作答正确与否需要通过选项按钮的样式来体现，整体来看选项按钮共有三种样式，如下图所示</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>默认</th>
+<th>正确</th>
+<th>错误</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>效果</td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710223617912-e615ed49-cc86-435d-b51c-d4ff0dc130c2.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710223573853-a8880712-3e4d-4194-a5d4-5c6e6d09c69b.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710223598443-4fadf470-6025-4ab4-9fe9-09a7fbcc638a.png" /></td>
+</tr>
+<tr>
+<td>按钮样式参考</td>
+<td>背景颜色：<code>Color.White</code>字体颜色：<code>Color.Black</code></td>
+<td>背景颜色：<code>#1DBF7B</code>字体颜色：<code>Color.White</code></td>
+<td>背景颜色：<code>#FA635F</code>字体颜色：<code>Color.White</code></td>
+</tr>
+<tr>
+<td>图标样式参考</td>
+<td></td>
+<td><code>.width(22) .height(22)</code></td>
+<td><code>.width(22) .height(22)</code></td>
+</tr>
+</tbody>
+</table>
+<p>考虑到上述的多种样式，可以将选项按钮抽取为一个自定义组件，并定义一个状态变量来控制按钮的样式，状态变量的类型可使用如下枚举类型</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>export enum OptionStatus {
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  Default, //默认状态
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  Right, //正确状态
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  Wrong //错误状态
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>}
+</code></pre></div>
+<p>这样一来，答完一道题目后，我们只需修改上述状态变量，按钮就能呈现出对应的样式了。</p>
+<p><strong>第二步：实现修改按钮状态的逻辑</strong></p>
+<p>正常情况下，每次切换题目后，ForEach渲染的选项按钮都会重建，因此我们只需考虑选项按钮如何从默认的<strong>Default</strong>状态切到<strong>Right</strong>或者<strong>Wrong</strong>即可。</p>
+<p><strong>注意：</strong></p>
+<p>若前后两道题目的<strong>options</strong>数组中的选项有重合，按照ForEach尽量复用原有组件的原则，那么有些<strong>OptionButton</strong>组件就可能不会重建，此时我们还要去考虑如何将这些<strong>OptionButton</strong>组件的状态从上一道题目的<strong>Right</strong>或者<strong>Wrong</strong>恢复为<strong>Default</strong>。为了简化逻辑，我们可以将<strong>ForEach</strong>的<strong>keyGenerator</strong>设置为</p>
+<p><code>option =&gt; this.questions[this.currentIndex].word + '-' + option</code>，这样就能确保每道题目的<strong>OptionButton</strong>都会重建。</p>
+<p>将按选项按钮从<strong>Default</strong>状态切换为<strong>Right</strong>或者<strong>Wrong</strong>，需要考虑如下两个问题</p>
+<ol>
+<li>怎样触发每个按钮改变自身状态的操作</li>
+<li>每个按钮怎样判断自身应该变为哪个状态</li>
+</ol>
+<p>具体逻辑如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710228405008-32627f1a-825b-4bf3-ab12-e1ed00f50a9a.png" /></p>
+<p><strong>说明：</strong></p>
+<ol>
+<li>子组件中的<code>option</code>和<code>answer</code>分别表示选项和正确答案，因此子组件可根据这两个变量判断自身是否是正确答案。</li>
+<li>父组件中的<code>@State selectedOption</code>变量用于记录当前选择的选项，子组件中的<code>@Prop selectedOption</code>会同步父组件的变化，因此子组件可根据<code>option</code>和<code>selectedOption</code>判断自身是否是被选答案。</li>
+<li><code>answerStatus</code>变量表示当前题目的作答状态，作答状态共有两个，分别是<code>AnswerStatus.Answering</code>和<code>AnswerStatus.Answered</code>。每道题目的初始作答状态都是<code>AnswerStatus.Answering</code>，作答后会变为<code>AnswerStatus.Answered</code>。父组件根据<code>answerStatus</code>变量控制选项按钮是否可用，子组件通过监听<code>answerStatus</code>的变化来触发修改<code>optionStatus</code>的操作。</li>
+</ol>
+<h4 id="2225">2.2.2.5. 统计信息<a class="headerlink" href="#2225" title="Permanent link"></a></h4>
+<p>由于各项统计信息的结构相似，因此可以考虑将统计信息也抽取为一个自定义组件，组件应有三个参数，分别是<strong>图标</strong>、<strong>名称</strong>和一个<strong>UI组件</strong></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711078428171-5911b589-9b0b-4c1a-85fa-82b49d527f76.png" /></p>
+<p><strong>注意：</strong>UI组件参数需使用@BuilderParam装饰</p>
+<p>考虑到后序打卡圈需要用到统计信息，但字体颜色不同，因此可以再增加一个参数——<strong>字体颜色</strong></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710905908891-9a8451b9-9854-42ac-8d9f-d1861cf6da6d.png" /></p>
+<p>组件样式可参考下表</p>
+<table>
+<thead>
+<tr>
+<th>效果（以准确率为例）</th>
+<th><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710231427256-2350598a-c907-4d29-9cbf-f9b5f7347ea1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>容器样式参考</td>
+<td><code>.width('100%') .height(30)</code></td>
+</tr>
+<tr>
+<td>图标样式参考</td>
+<td><code>.height(14) .width(14)</code></td>
+</tr>
+<tr>
+<td>名称样式参考</td>
+<td><code>.fontWeight(FontWeight.Medium) .fontSize(14) .fontColor(this.fontColor)</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="22251">2.2.2.5.1. 准确率<a class="headerlink" href="#22251" title="Permanent link"></a></h5>
+<p>为统计<strong>准确率</strong><strong>，</strong>需要定义<code>answeredCount</code>和<code>rightCount</code>两个状态变量，<code>answeredCount</code>表示本轮测试已作答个数，<code>rightCount</code>表示正确个数，并在每次作答后，更新上述变量。</p>
+<h5 id="22252">2.2.2.5.2. 进度<a class="headerlink" href="#22252" title="Permanent link"></a></h5>
+<p>进度的统计需要用到<code>totalCount</code>和<code>answeredCount</code>两个状态变量，并通过进度条组件<strong>Progress</strong>呈现。</p>
+<h5 id="22253">2.2.2.5.3. 个数<a class="headerlink" href="#22253" title="Permanent link"></a></h5>
+<p>个数通过一个按钮组件<strong>Button</strong>呈现，点击该按钮时，需要弹出文本选择器，选择下一轮测试的单词个数，选择后需要重新拉取指定个数的题目。按钮的样式可参考下表</p>
+<table>
+<thead>
+<tr>
+<th>样式</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.width(100) .height(25) .backgroundColor('#EBEBEB') .fontColor(Color.Black)</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710240212796-1770dbe8-1ba7-4a5d-bd19-a4c1e83c6e69.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意：</strong>只有<strong>停止状态</strong>下才可修改题目个数</p>
+<h5 id="22254">2.2.2.5.4. 用时<a class="headerlink" href="#22254" title="Permanent link"></a></h5>
+<p>计时器需要用到<strong>TextTimer</strong>组件，该组件的用法如下</p>
+<p><strong>1.参数</strong></p>
+<p><strong>TextTimer</strong>需要传入一个<code>controller</code>参数，用于控制计时器的启动、暂停和重置，具体用法如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>//controller声明
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>timerController: TextTimerController = new TextTimerController();
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>//组件声明
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>TextTimer({ controller: this.timerController })
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>//启动计时器
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>this.timerController.start()
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>//暂停计时器
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>this.timerController.pause()
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>//重置计时器
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>this.timerController.reset()
+</code></pre></div>
+<p><strong>2.事件</strong></p>
+<p><strong>TextTimer</strong>的常用事件为<code>onTimer</code>，只要计时器发生变化，就会触发该事件，因此可用该事件记录用时。该方法接收的回调函数定义如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>(utc: number, elapsedTime: number) =&gt; void
+</code></pre></div>
+<p>其中<code>utc</code>表示当前的时间戳，<code>elapsedTime</code>表示自计时器开始以来所经过时间，单位是毫秒。</p>
+<h4 id="2226">2.2.2.6. 弹窗<a class="headerlink" href="#2226" title="Permanent link"></a></h4>
+<p>弹窗的作用是展示统计信息，因此我们需要为弹窗定义三个参数，分别是<code>answeredCount</code>、<code>rightCount</code>、<code>timeUsed</code>。</p>
+<p>弹窗的布局如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710293328949-84b7e88f-f124-4e83-b478-c3b928fe31af.png" /></p>
+<p>弹窗内组件的样式可参考下表</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>样式</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>外层容器</td>
+<td><code>.backgroundColor(Color.Transparent) .width('80%')</code></td>
+<td></td>
+</tr>
+<tr>
+<td>关闭按钮</td>
+<td><code>.width(25) .height(25) .alignSelf(ItemAlign.End)</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711089019852-b8724533-6d49-49ea-ab82-8a72bd0b765d.png" /></td>
+</tr>
+<tr>
+<td>内层容器</td>
+<td><code>.backgroundColor(Color.White) .width('100%') .padding(20) .borderRadius(10)</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710293991206-c1e89fbe-227c-4409-8147-d597fe37a77a.png" /></td>
+</tr>
+<tr>
+<td>图片</td>
+<td><code>.width('100%') .borderRadius(10)</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710294208209-f07fd1d3-11ea-4cf4-81dc-8c51ee6e72e9.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意：</strong>默认情况下所有弹窗都使用默认的样式，如需使用自定义样式，需要为<strong>CustomDialogController</strong>配置<code>customStyle:true</code>参数。</p>
+<p>时间格式转换逻辑可参考如下代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>export function convertMillisecondsToTime(timeUsed: number): string {
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  // 计算小时、分钟和秒
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  const hours = Math.floor(timeUsed / 3600000); // 1小时 = 3600000毫秒
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  const minutes = Math.floor((timeUsed % 3600000) / 60000); // 1分钟 = 60000毫秒
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>  const seconds = Math.floor((timeUsed % 60000) / 1000); // 1秒 = 1000毫秒
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>  // 将结果格式化为时分秒字符串
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>  if (hours &gt; 0) {
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    return `${hours}时  ${minutes}分 ${seconds}秒`
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>  } else if (minutes &gt; 0) {
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    return `${minutes}分 ${seconds}秒`
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>  } else {
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    return `${seconds}秒`
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>  }
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>}
+</code></pre></div>
+<p>弹窗的<strong>交互逻辑</strong>是：</p>
+<p>点击<strong>关闭按钮</strong>，关闭弹窗并重置题目和统计信息</p>
+<p>点击<strong>再来一局</strong>，关闭弹窗并重置题目和统计信息，然后直接开始测试</p>
+<p>点击<strong>登录打卡</strong>，关闭弹窗并重置题目和统计信息，然后跳转到登录页面，这部分功能后边再进行实现。</p>
+<h1 id="3-tab">3. Tab布局<a class="headerlink" href="#3-tab" title="Permanent link"></a></h1>
+<h2 id="31">3.1. 概述<a class="headerlink" href="#31" title="Permanent link"></a></h2>
+<p>本节要完成的内容是Tab布局，具体效果如下</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711161674677-e11e5ded-1ed0-43ee-b459-f727d5db451d.png" /></p>
+<h2 id="32">3.2. 实现思路<a class="headerlink" href="#32" title="Permanent link"></a></h2>
+<h3 id="321">3.2.1. 所需技能<a class="headerlink" href="#321" title="Permanent link"></a></h3>
+<p>实现上述效果需要用到以下技能</p>
+<p><strong>Tabs</strong>组件</p>
+<p>上述内容可参考<a href="https://www.yuque.com/danny-sroga/gaguqh/qg2n2d5o04iu1gsm">HarmonyOS 4.0 应用开发</a>中的第7章。</p>
+<h3 id="322">3.2.2. 实现过程<a class="headerlink" href="#322" title="Permanent link"></a></h3>
+<p>标签样式可参考下表</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>选中效果</th>
+<th>未选中效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>图标</td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/svg/35106503/1710809623120-2d3c5a6d-34aa-40ce-bd06-faa08c6bd7ce.svg" /><code>@Styles function tabIconStyle() {  .width(25)  .height(25) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/svg/35106503/1710809602004-71eabfc3-3c4d-4251-a463-1a5687344a10.svg" /><code>@Styles function tabIconStyle() {  .width(25)  .height(25) }</code></td>
+</tr>
+<tr>
+<td>文字</td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710809755272-c1aa61bc-cef6-45ee-a64b-995982e0a954.png" /><code>@Extend(Text) function tabTitleStyle(color: ResourceColor) {  .fontSize(10)  .fontWeight(FontWeight.Medium)  .fontColor(color) //Color.Black  .margin({ bottom: 2 }) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710809771685-4d921b0e-b1bc-4909-a651-f811b4a2a03c.png" /><code>@Extend(Text) function tabTitleStyle(color: ResourceColor) {  .fontSize(10)  .fontWeight(FontWeight.Medium)  .fontColor(color) //#959595  .margin({ bottom: 2 }) }</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="4">4. 欢迎页面<a class="headerlink" href="#4" title="Permanent link"></a></h1>
+<h2 id="41">4.1. 概述<a class="headerlink" href="#41" title="Permanent link"></a></h2>
+<p>欢迎页面的功能相对简单，要实现的具体效果如下</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/gif/35106503/1711161482546-0dda0e11-c643-4498-a35c-477896a37a38.gif" /></p>
+<h2 id="42">4.2. 实现思路<a class="headerlink" href="#42" title="Permanent link"></a></h2>
+<h3 id="421">4.2.1. 所需技能<a class="headerlink" href="#421" title="Permanent link"></a></h3>
+<p>答题模块所需技能如下</p>
+<ol>
+<li>组件动画效果</li>
+<li>页面路由</li>
+<li>组件生命周期钩子函数</li>
+</ol>
+<p>上述内容可参考<a href="https://www.yuque.com/danny-sroga/gaguqh/qg2n2d5o04iu1gsm">HarmonyOS 4.0 应用开发</a>中的第8、9、10章。</p>
+<h3 id="422">4.2.2. 实现过程<a class="headerlink" href="#422" title="Permanent link"></a></h3>
+<h4 id="4221">4.2.2.1. 基本布局和样式<a class="headerlink" href="#4221" title="Permanent link"></a></h4>
+<p>欢迎页面的基本布局如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710748539232-aefad8d8-f5c1-4cf5-b6e1-8a95c49f2459.png" /></p>
+<p>各组件样式可参考下表</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>样式</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>页面背景</td>
+<td><code>@Styles function bgStyle() {  .width('100%')  .height('100%')  .backgroundImage($r('app.media.img_splash_bg'))  .backgroundImageSize({ width: '100%', height: '100%' }) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710748773558-cba9643e-7dc8-49d5-92f4-03ce52cbfbf4.png" /></td>
+</tr>
+<tr>
+<td>logo</td>
+<td><code>@Extend(Image) function logoStyle() {  .width(90)  .height(90)  .margin({ top: 120 }) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710749131580-8310a8da-8509-412d-8ee6-7237629eb087.png" /></td>
+</tr>
+<tr>
+<td>标题</td>
+<td><code>@Extend(Text) function titleStyle() {  .fontSize(21)  .fontColor(Color.White)  .fontWeight(FontWeight.Bold)  .margin({ top: 15 }) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710749217893-5de75549-af86-433e-815e-d959ae2da8f4.png" /></td>
+</tr>
+<tr>
+<td>页脚</td>
+<td><code>@Extend(Text) function footerStyle() {  .fontSize(12)  .fontColor('#546B9D')  .fontWeight(FontWeight.Bold)  .margin({ bottom: 30 }) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710749159440-e9c320df-8fe2-4127-8b1c-3ca5288151bf.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="4222">4.2.2.2. 实现动画效果<a class="headerlink" href="#4222" title="Permanent link"></a></h4>
+<p>要实现的动画效果如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/gif/35106503/1711161558234-12628cba-013d-4769-a7f1-6b12af2d974e.gif" /></p>
+<p>很明显，上述动画效果可归类为<strong>组件转场动画</strong>，因此可使用<code>transition()</code>方法配置动画效果，需要注意的是，上述动画叠加了两个转场效果，分别是<strong>平移</strong>和<strong>透明度</strong>。</p>
+<h4 id="4223">4.2.2.3. 触发动画效果<a class="headerlink" href="#4223" title="Permanent link"></a></h4>
+<p>要求页面出现时自动触发动画效果，此时需要用到组件生命周期函数，这里可使用<code>onPageShow()</code>函数。</p>
+<h4 id="4224">4.2.2.4. 页面跳转<a class="headerlink" href="#4224" title="Permanent link"></a></h4>
+<p>要求动画播放完毕后，停留200ms后跳转到答题页面，此时需要用到页面路由功能，需要注意的是，一般情况下欢迎页是<strong>不可返回</strong>的。</p>
+<h4 id="4225">4.2.2.5. 指定应用初始页面<a class="headerlink" href="#4225" title="Permanent link"></a></h4>
+<p>修改<code>entry/src/main/ets/entryability/EntryAbility.ts</code>文件中的如下内容，指定应用初始页面位欢迎页</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>onWindowStageCreate(windowStage: window.WindowStage) {
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  // Main window is created, set main page for this ability
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  hilog.info(0x0000, &#39;testTag&#39;, &#39;%{public}s&#39;, &#39;Ability onWindowStageCreate&#39;);
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  //修改位置
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  windowStage.loadContent(&#39;pages/SplashPage&#39;, (err, data) =&gt; {
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    if (err.code) {
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>      hilog.error(0x0000, &#39;testTag&#39;, &#39;Failed to load the content. Cause: %{public}s&#39;, JSON.stringify(err) ?? &#39;&#39;);
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>      return;
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    }
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    hilog.info(0x0000, &#39;testTag&#39;, &#39;Succeeded in loading the content. Data: %{public}s&#39;, JSON.stringify(data) ?? &#39;&#39;);
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>  });
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>}
+</code></pre></div>
+<p><strong>说明：</strong>该文件的具体含义可参考<a href="https://www.yuque.com/danny-sroga/mfzrwh/chudnxolaim7y0c5">HarmonyOS 4.0 应用开发</a>第15章</p>
+<h1 id="5">5. 登录功能<a class="headerlink" href="#5" title="Permanent link"></a></h1>
+<h2 id="51">5.1. 概述<a class="headerlink" href="#51" title="Permanent link"></a></h2>
+<p>登录方式为手机短信验证码登录，具体效果如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710813774125-dade3417-6b80-4ad9-8119-ecad6038e382.png" /></p>
+<h2 id="52">5.2. 实现思路<a class="headerlink" href="#52" title="Permanent link"></a></h2>
+<h3 id="521">5.2.1. 所需技能<a class="headerlink" href="#521" title="Permanent link"></a></h3>
+<p>登录功能所需技能如下</p>
+<ol>
+<li>网络请求</li>
+<li>应用级状态管理</li>
+</ol>
+<p>上述内容可参考<a href="https://www.yuque.com/danny-sroga/gaguqh/qg2n2d5o04iu1gsm">HarmonyOS 4.0 应用开发</a>中的第12、13章。</p>
+<h3 id="522">5.2.2. 实现过程<a class="headerlink" href="#522" title="Permanent link"></a></h3>
+<h4 id="5221">5.2.2.1. 基本布局和样式<a class="headerlink" href="#5221" title="Permanent link"></a></h4>
+<p>登录页面的基本布局和样式可参考如下代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>import router from &#39;@ohos.router&#39;
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>@Entry
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>@Component
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>struct LoginPage {
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>  @State phone:string=&#39;&#39;
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  @State code:string=&#39;&#39;
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>  build() {
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    Column() {
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>      Image($r(&#39;app.media.ic_back&#39;))
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>        .backStyle()
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>        .alignSelf(ItemAlign.Start)
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        .onClick(() =&gt; {
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>          //todo:返回上一页面
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>        })
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>      Blank()
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>      Column() {
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>        Text(&#39;欢迎登录&#39;)
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>          .titleStyle()
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>        Row() {
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>          Image($r(&quot;app.media.ic_phone&quot;))
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>            .iconStyle()
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>          TextInput({ placeholder: &#39;请输入手机号码&#39;,text:this.phone })
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>            .inputStyle()
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>            .onChange((value)=&gt;{
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>              this.phone=value;
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>            })
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>        }.margin({ top: 30 })
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a>        Divider()
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a>          .color(Color.Black)
+<a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a>
+<a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a>        Row() {
+<a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a>          Image($r(&quot;app.media.ic_code&quot;))
+<a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a>            .iconStyle()
+<a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a>          TextInput({ placeholder: &#39;请输入验证码&#39;,text:this.code })
+<a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a>            .inputStyle()
+<a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a>            .onChange((value)=&gt;{
+<a id="__codelineno-9-40" name="__codelineno-9-40" href="#__codelineno-9-40"></a>              this.code=value;
+<a id="__codelineno-9-41" name="__codelineno-9-41" href="#__codelineno-9-41"></a>            })
+<a id="__codelineno-9-42" name="__codelineno-9-42" href="#__codelineno-9-42"></a>          Button(&#39;获取验证码&#39;)
+<a id="__codelineno-9-43" name="__codelineno-9-43" href="#__codelineno-9-43"></a>            .buttonStyle(Color.White, Color.Black)
+<a id="__codelineno-9-44" name="__codelineno-9-44" href="#__codelineno-9-44"></a>            .onClick(() =&gt; {
+<a id="__codelineno-9-45" name="__codelineno-9-45" href="#__codelineno-9-45"></a>              //todo:获取验证码
+<a id="__codelineno-9-46" name="__codelineno-9-46" href="#__codelineno-9-46"></a>            })
+<a id="__codelineno-9-47" name="__codelineno-9-47" href="#__codelineno-9-47"></a>
+<a id="__codelineno-9-48" name="__codelineno-9-48" href="#__codelineno-9-48"></a>        }.margin({ top: 20 })
+<a id="__codelineno-9-49" name="__codelineno-9-49" href="#__codelineno-9-49"></a>
+<a id="__codelineno-9-50" name="__codelineno-9-50" href="#__codelineno-9-50"></a>        Divider()
+<a id="__codelineno-9-51" name="__codelineno-9-51" href="#__codelineno-9-51"></a>          .margin({ right: 120 })
+<a id="__codelineno-9-52" name="__codelineno-9-52" href="#__codelineno-9-52"></a>          .color(Color.Black)
+<a id="__codelineno-9-53" name="__codelineno-9-53" href="#__codelineno-9-53"></a>
+<a id="__codelineno-9-54" name="__codelineno-9-54" href="#__codelineno-9-54"></a>        Button(&#39;立即登录&#39;)
+<a id="__codelineno-9-55" name="__codelineno-9-55" href="#__codelineno-9-55"></a>          .buttonStyle(Color.Black, Color.White)
+<a id="__codelineno-9-56" name="__codelineno-9-56" href="#__codelineno-9-56"></a>          .width(&#39;100%&#39;)
+<a id="__codelineno-9-57" name="__codelineno-9-57" href="#__codelineno-9-57"></a>          .margin({ top: 50 })
+<a id="__codelineno-9-58" name="__codelineno-9-58" href="#__codelineno-9-58"></a>          .onClick(() =&gt; {
+<a id="__codelineno-9-59" name="__codelineno-9-59" href="#__codelineno-9-59"></a>            //todo:登录
+<a id="__codelineno-9-60" name="__codelineno-9-60" href="#__codelineno-9-60"></a>          })
+<a id="__codelineno-9-61" name="__codelineno-9-61" href="#__codelineno-9-61"></a>
+<a id="__codelineno-9-62" name="__codelineno-9-62" href="#__codelineno-9-62"></a>        Row() {
+<a id="__codelineno-9-63" name="__codelineno-9-63" href="#__codelineno-9-63"></a>          Text(&#39;登录即表示已同意&#39;)
+<a id="__codelineno-9-64" name="__codelineno-9-64" href="#__codelineno-9-64"></a>            .fontSize(10)
+<a id="__codelineno-9-65" name="__codelineno-9-65" href="#__codelineno-9-65"></a>            .fontColor(&#39;#546B9D&#39;)
+<a id="__codelineno-9-66" name="__codelineno-9-66" href="#__codelineno-9-66"></a>          Text(&#39;《用户使用协议》&#39;)
+<a id="__codelineno-9-67" name="__codelineno-9-67" href="#__codelineno-9-67"></a>            .fontSize(10)
+<a id="__codelineno-9-68" name="__codelineno-9-68" href="#__codelineno-9-68"></a>            .fontColor(&#39;#00B3FF&#39;)
+<a id="__codelineno-9-69" name="__codelineno-9-69" href="#__codelineno-9-69"></a>        }.margin({ top: 20 })
+<a id="__codelineno-9-70" name="__codelineno-9-70" href="#__codelineno-9-70"></a>      }.formBgStyle()
+<a id="__codelineno-9-71" name="__codelineno-9-71" href="#__codelineno-9-71"></a>
+<a id="__codelineno-9-72" name="__codelineno-9-72" href="#__codelineno-9-72"></a>      Row({ space: 10 }) {
+<a id="__codelineno-9-73" name="__codelineno-9-73" href="#__codelineno-9-73"></a>        Image($r(&#39;app.media.ic_logo&#39;))
+<a id="__codelineno-9-74" name="__codelineno-9-74" href="#__codelineno-9-74"></a>          .width(36)
+<a id="__codelineno-9-75" name="__codelineno-9-75" href="#__codelineno-9-75"></a>          .height(36)
+<a id="__codelineno-9-76" name="__codelineno-9-76" href="#__codelineno-9-76"></a>        Text(&#39;快速记单词神器&#39;)
+<a id="__codelineno-9-77" name="__codelineno-9-77" href="#__codelineno-9-77"></a>          .fontColor(&#39;#546B9D&#39;)
+<a id="__codelineno-9-78" name="__codelineno-9-78" href="#__codelineno-9-78"></a>          .fontWeight(FontWeight.Bold)
+<a id="__codelineno-9-79" name="__codelineno-9-79" href="#__codelineno-9-79"></a>          .fontSize(20)
+<a id="__codelineno-9-80" name="__codelineno-9-80" href="#__codelineno-9-80"></a>      }.margin({ top: 70 })
+<a id="__codelineno-9-81" name="__codelineno-9-81" href="#__codelineno-9-81"></a>
+<a id="__codelineno-9-82" name="__codelineno-9-82" href="#__codelineno-9-82"></a>      Text(&#39;Developed By Atguigu&#39;)
+<a id="__codelineno-9-83" name="__codelineno-9-83" href="#__codelineno-9-83"></a>        .fontSize(12)
+<a id="__codelineno-9-84" name="__codelineno-9-84" href="#__codelineno-9-84"></a>        .fontColor(&#39;#546B9D&#39;)
+<a id="__codelineno-9-85" name="__codelineno-9-85" href="#__codelineno-9-85"></a>        .margin(10)
+<a id="__codelineno-9-86" name="__codelineno-9-86" href="#__codelineno-9-86"></a>
+<a id="__codelineno-9-87" name="__codelineno-9-87" href="#__codelineno-9-87"></a>    }
+<a id="__codelineno-9-88" name="__codelineno-9-88" href="#__codelineno-9-88"></a>    .loginBgStyle()
+<a id="__codelineno-9-89" name="__codelineno-9-89" href="#__codelineno-9-89"></a>  }
+<a id="__codelineno-9-90" name="__codelineno-9-90" href="#__codelineno-9-90"></a>}
+<a id="__codelineno-9-91" name="__codelineno-9-91" href="#__codelineno-9-91"></a>
+<a id="__codelineno-9-92" name="__codelineno-9-92" href="#__codelineno-9-92"></a>@Styles function loginBgStyle() {
+<a id="__codelineno-9-93" name="__codelineno-9-93" href="#__codelineno-9-93"></a>  .width(&#39;100%&#39;)
+<a id="__codelineno-9-94" name="__codelineno-9-94" href="#__codelineno-9-94"></a>  .height(&#39;100%&#39;)
+<a id="__codelineno-9-95" name="__codelineno-9-95" href="#__codelineno-9-95"></a>  .backgroundImage($r(&quot;app.media.img_login_bg&quot;))
+<a id="__codelineno-9-96" name="__codelineno-9-96" href="#__codelineno-9-96"></a>  .backgroundImageSize({ width: &#39;100%&#39;, height: &#39;100%&#39; })
+<a id="__codelineno-9-97" name="__codelineno-9-97" href="#__codelineno-9-97"></a>  .padding({
+<a id="__codelineno-9-98" name="__codelineno-9-98" href="#__codelineno-9-98"></a>    top: 30, bottom: 30, left: 20, right: 20
+<a id="__codelineno-9-99" name="__codelineno-9-99" href="#__codelineno-9-99"></a>  })
+<a id="__codelineno-9-100" name="__codelineno-9-100" href="#__codelineno-9-100"></a>}
+<a id="__codelineno-9-101" name="__codelineno-9-101" href="#__codelineno-9-101"></a>
+<a id="__codelineno-9-102" name="__codelineno-9-102" href="#__codelineno-9-102"></a>@Styles function backStyle() {
+<a id="__codelineno-9-103" name="__codelineno-9-103" href="#__codelineno-9-103"></a>  .width(25)
+<a id="__codelineno-9-104" name="__codelineno-9-104" href="#__codelineno-9-104"></a>  .height(25)
+<a id="__codelineno-9-105" name="__codelineno-9-105" href="#__codelineno-9-105"></a>}
+<a id="__codelineno-9-106" name="__codelineno-9-106" href="#__codelineno-9-106"></a>
+<a id="__codelineno-9-107" name="__codelineno-9-107" href="#__codelineno-9-107"></a>@Styles function formBgStyle() {
+<a id="__codelineno-9-108" name="__codelineno-9-108" href="#__codelineno-9-108"></a>  .backgroundColor(Color.White)
+<a id="__codelineno-9-109" name="__codelineno-9-109" href="#__codelineno-9-109"></a>  .padding(30)
+<a id="__codelineno-9-110" name="__codelineno-9-110" href="#__codelineno-9-110"></a>  .borderRadius(20)
+<a id="__codelineno-9-111" name="__codelineno-9-111" href="#__codelineno-9-111"></a>}
+<a id="__codelineno-9-112" name="__codelineno-9-112" href="#__codelineno-9-112"></a>
+<a id="__codelineno-9-113" name="__codelineno-9-113" href="#__codelineno-9-113"></a>@Extend(Text) function titleStyle() {
+<a id="__codelineno-9-114" name="__codelineno-9-114" href="#__codelineno-9-114"></a>  .fontWeight(FontWeight.Bold)
+<a id="__codelineno-9-115" name="__codelineno-9-115" href="#__codelineno-9-115"></a>  .fontSize(22)
+<a id="__codelineno-9-116" name="__codelineno-9-116" href="#__codelineno-9-116"></a>}
+<a id="__codelineno-9-117" name="__codelineno-9-117" href="#__codelineno-9-117"></a>
+<a id="__codelineno-9-118" name="__codelineno-9-118" href="#__codelineno-9-118"></a>@Styles function iconStyle() {
+<a id="__codelineno-9-119" name="__codelineno-9-119" href="#__codelineno-9-119"></a>  .width(24)
+<a id="__codelineno-9-120" name="__codelineno-9-120" href="#__codelineno-9-120"></a>  .height(24)
+<a id="__codelineno-9-121" name="__codelineno-9-121" href="#__codelineno-9-121"></a>}
+<a id="__codelineno-9-122" name="__codelineno-9-122" href="#__codelineno-9-122"></a>
+<a id="__codelineno-9-123" name="__codelineno-9-123" href="#__codelineno-9-123"></a>@Extend(TextInput) function inputStyle() {
+<a id="__codelineno-9-124" name="__codelineno-9-124" href="#__codelineno-9-124"></a>  .height(40)
+<a id="__codelineno-9-125" name="__codelineno-9-125" href="#__codelineno-9-125"></a>  .layoutWeight(1)
+<a id="__codelineno-9-126" name="__codelineno-9-126" href="#__codelineno-9-126"></a>  .fontSize(14)
+<a id="__codelineno-9-127" name="__codelineno-9-127" href="#__codelineno-9-127"></a>  .backgroundColor(Color.Transparent)
+<a id="__codelineno-9-128" name="__codelineno-9-128" href="#__codelineno-9-128"></a>}
+<a id="__codelineno-9-129" name="__codelineno-9-129" href="#__codelineno-9-129"></a>
+<a id="__codelineno-9-130" name="__codelineno-9-130" href="#__codelineno-9-130"></a>@Extend(Button) function buttonStyle(bgColor: ResourceColor, fontColor: ResourceColor) {
+<a id="__codelineno-9-131" name="__codelineno-9-131" href="#__codelineno-9-131"></a>  .type(ButtonType.Normal)
+<a id="__codelineno-9-132" name="__codelineno-9-132" href="#__codelineno-9-132"></a>  .fontSize(14)
+<a id="__codelineno-9-133" name="__codelineno-9-133" href="#__codelineno-9-133"></a>  .fontWeight(FontWeight.Medium)
+<a id="__codelineno-9-134" name="__codelineno-9-134" href="#__codelineno-9-134"></a>  .borderWidth(1)
+<a id="__codelineno-9-135" name="__codelineno-9-135" href="#__codelineno-9-135"></a>  .borderRadius(5)
+<a id="__codelineno-9-136" name="__codelineno-9-136" href="#__codelineno-9-136"></a>  .backgroundColor(bgColor)
+<a id="__codelineno-9-137" name="__codelineno-9-137" href="#__codelineno-9-137"></a>  .fontColor(fontColor)
+<a id="__codelineno-9-138" name="__codelineno-9-138" href="#__codelineno-9-138"></a>}
+</code></pre></div>
+<h4 id="5222">5.2.2.2. 对接后台接口<a class="headerlink" href="#5222" title="Permanent link"></a></h4>
+<p><strong>第一步：添加axios依赖</strong></p>
+<p>在终端执行如下命令</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">ohpm</span> <span class="n">install</span> <span class="nv">@ohos</span><span class="p">/</span><span class="n">axios</span>
+</code></pre></div>
+<p><strong>第二步：创建axios实例</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>import axios, { AxiosError, AxiosResponse, InternalAxiosRequestConfig } from &#39;@ohos/axios&#39;
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>import promptAction from &#39;@ohos.promptAction&#39;;
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>//创建axios实例
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>export const instance = axios.create({
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>  baseURL: &#39;http://xxx.xxx.xxx.xxx:3000&#39;,
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>  timeout: 2000
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>})
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>// 添加请求拦截器
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>instance.interceptors.request.use((config: InternalAxiosRequestConfig) =&gt; {
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>  // 通过AppStorage获取token
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>  const token = AppStorage.Get(&#39;token&#39;)
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>  if (token) {
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>    // 若token存在，则将其添加到请求头
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>    config.headers[&#39;token&#39;] = token
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>  }
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>  return config;
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>}, (error: AxiosError) =&gt; {
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>  //若出现异常，则提示异常信息
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>  promptAction.showToast({ message: error.message })
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>  return Promise.reject(error);
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>});
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>// 添加响应拦截器
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>instance.interceptors.response.use((response: AxiosResponse) =&gt; {
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a>  // 若服务器返回的是正常数据，不做任何处理
+<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>  if (response.data.code === 200) {
+<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>    return response
+<a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a>  } else {
+<a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a>    //若服务器返回的是异常数据，则提示异常信息
+<a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a>    promptAction.showToast({ message: response.data.message })
+<a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a>    return Promise.reject(response.data.message)
+<a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a>  }
+<a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a>}, (error: AxiosError) =&gt; {
+<a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a>  //若出现异常，则提示异常信息
+<a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a>  promptAction.showToast({ message: error.message })
+<a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a>  return Promise.reject(error);
+<a id="__codelineno-11-39" name="__codelineno-11-39" href="#__codelineno-11-39"></a>});
+</code></pre></div>
+<p><strong>第三步：对接后台接口</strong></p>
+<p>登录功能需要对接两个后台接口，分别是获取验证码和登录</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>//获取验证码
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>export function sendCode(phone: string) {
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  return instance.get(&#39;/word/user/code&#39;, { params: { phone: phone } });
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>}
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>//登录
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>export function login(phone: string, code: string) {
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>  return instance.post(&#39;/word/user/login&#39;, { phone: phone, code: code });
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>}
+</code></pre></div>
+<p><strong>注意：</strong>需要配置<strong>网络访问权限</strong></p>
+<h4 id="5223">5.2.2.3. 实现登录逻辑<a class="headerlink" href="#5223" title="Permanent link"></a></h4>
+<p>登录逻辑相对简单，需要注意的是登录成功后，应将token保存至<strong>PersistentStorage</strong>中，并返回上一页面。</p>
+<h1 id="6">6. 打卡功能<a class="headerlink" href="#6" title="Permanent link"></a></h1>
+<h2 id="61">6.1. 概述<a class="headerlink" href="#61" title="Permanent link"></a></h2>
+<p>完成登录功能后，便可实现答题结束后的打卡功能。</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710827868192-f7576e9c-83ff-4bfc-a2c0-d28e697186a9.png" /></p>
+<p>结果弹窗中，应该根据当前的登录状态显示不同的打卡按钮，若为登录状态应显示<strong>立即打卡</strong>，否则显示<strong>登录打卡</strong>。</p>
+<p>点击<strong>立即打卡</strong>，应直接发送打卡请求并跳转到打卡圈，具体流程如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710828793993-e54478dd-c93c-469d-8dab-7a6e05377c03.png" /></p>
+<p>点击<strong>登录打卡</strong>，应先跳转到登录页面，登录成功后，再发送打卡请求，并跳转到打卡圈，具体流程如下图所示</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710828869231-59c08deb-c023-4894-8745-0604c6949c35.png" /></p>
+<h2 id="62">6.2. 实现思路<a class="headerlink" href="#62" title="Permanent link"></a></h2>
+<h3 id="621">6.2.1. 页面跳转逻辑<a class="headerlink" href="#621" title="Permanent link"></a></h3>
+<p>首先按照上述要求实现页面的跳转逻辑。</p>
+<h3 id="622">6.2.2. 对接后台接口<a class="headerlink" href="#622" title="Permanent link"></a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>export function createPost(post: {
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>  rightCount: number,
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>  answeredCount: number,
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>  timeUsed: number
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>}) {
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>  return instance.post(&#39;/word/post/create&#39;, post)
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>}
+</code></pre></div>
+<h1 id="7">7. 打卡圈页面<a class="headerlink" href="#7" title="Permanent link"></a></h1>
+<h2 id="71">7.1. 概述<a class="headerlink" href="#71" title="Permanent link"></a></h2>
+<p>打卡圈用于展示全部用户的打卡记录，并提供点赞功能。</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710899401735-5f209f46-c7a6-4d5a-b0c8-02b54c4f37f0.png" /></p>
+<h2 id="72">7.2. 实现思路<a class="headerlink" href="#72" title="Permanent link"></a></h2>
+<h3 id="721">7.2.1. 定义打卡列表状态变量<a class="headerlink" href="#721" title="Permanent link"></a></h3>
+<p>服务端返回的打卡信息结构如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>{
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  &quot;id&quot;: 0,
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>  &quot;postText&quot;: &quot;string&quot;, //打卡文案
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>  &quot;rightCount&quot;: 0, //正确个数
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>  &quot;answeredCount&quot;: 0, //答题个数
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>  &quot;timeUsed&quot;: 0, //用时
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>  &quot;createTime&quot;: &quot;string&quot;, //打卡时间
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>  &quot;likeCount&quot;: 0, //点赞个数
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>  &quot;nickname&quot;: &quot;string&quot;, //用户昵称
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>  &quot;avatarUrl&quot;: &quot;string&quot;, //用户头像
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>  &quot;isLike&quot;: true //当前登录用户是否已点赞
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>}
+</code></pre></div>
+<p><code>isLike</code>属性表示当前用户是否已点赞，我们需要根据该属性显示不同颜色的点赞图标，如下</p>
+<table>
+<thead>
+<tr>
+<th><code>**isLike=true**</code></th>
+<th><code>**isLike=false**</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710896753744-2f33e076-d29e-46d1-80d7-0d57dabf9368.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710896736558-f9a942b3-b6c8-4215-b506-cafdcd8c5ae8.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>当用户执行点赞或者取消点赞的操作时，只需修改<code>isLike</code>的值，就能实现图标颜色的切换。需要注意的是，我们会使用一个数组保存打卡记录列表，而<code>isLike</code>是数组元素的属性。前文提到过直接修改数组元素的属性，框架是观察不到的，因此我们需要将<strong>打卡记录</strong>作为一个子组件，然后将打卡记录作为该组件的一个属性，并且该属性需要使用<code>@ObjectLink</code>装饰，另外打卡记录的类型需要是一个<strong>class</strong>，并且该<strong>class</strong>需要使用<code>@Observed</code>装饰，该<strong>class</strong>的定义如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>@Observed
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>export class PostInfo {
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>  id: number;
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>  postText: string;
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>  rightCount: number;
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>  answeredCount: number;
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>  timeUsed: number;
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>  createTime: string;
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>  likeCount: number;
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>  nickname: string;
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>  avatarUrl: string
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>  isLike: boolean;
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>  constructor(post:{id: number, postText: string, rightCount: number, answeredCount: number, timeUsed: number, createTime: string, likeCount: number, nickname: string, avatarUrl: string, isLike: boolean}) {
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>    this.id = post.id;
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>    this.postText = post.postText;
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>    this.rightCount = post.rightCount;
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>    this.answeredCount = post.answeredCount;
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>    this.timeUsed = post.timeUsed;
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>    this.createTime = post.createTime;
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>    this.likeCount = post.likeCount;
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>    this.nickname = post.nickname;
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>    this.avatarUrl = post.avatarUrl;
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>    this.isLike = post.isLike;
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>  }
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>}
+</code></pre></div>
+<p>打卡信息数组的定义如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>@State postInfoList: PostInfo[] = []
+</code></pre></div>
+<h3 id="722">7.2.2. 基本布局和样式<a class="headerlink" href="#722" title="Permanent link"></a></h3>
+<p>为方便后序布局和样式的开发，可先在<code>postInfoList</code>数组添加一个测试元素，如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>@State postInfoList: PostInfo[] = [new PostInfo({
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>  id: 1,
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>  postText: &quot;既然选择远方，当不负青春，砥砺前行&quot;,
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>  rightCount: 3,
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>  answeredCount: 4,
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>  timeUsed: 5747,
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>  createTime: &quot;2024-03-19 18:54:33&quot;,
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>  likeCount: 1,
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>  nickname: &quot;138****8888&quot;,
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>  avatarUrl: &quot;https://oss.aliyuncs.com/aliyun_id_photo_bucket/default_handsome.jpg&quot;,
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>  isLike: false
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>})]
+</code></pre></div>
+<p>打卡圈要求用户登录后才可访问，因此需要根据登录状态显示不同的内容，如下</p>
+<table>
+<thead>
+<tr>
+<th>未登录</th>
+<th>已登录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711162128347-804a7ca9-5c90-4879-84fc-46cf9a9f9c5b.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711162088308-87665709-5295-4f68-ba13-ecd982648f1c.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>登录状态可根据<strong>token</strong>进行判断</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>@StorageProp(&#39;token&#39;) token: string = &#39;&#39;
+</code></pre></div>
+<p>该页面的主体框架可参考如下代码</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>build() {  Column() {    Text('英语打卡圈')      .fontSize(18)      .margin({ top: 45 })      .fontWeight(FontWeight.Bold)    Divider()      .color(Color.Black)      .margin({ left: 20, right: 20, top: 10 })     if (this.token) {      //todo:打卡列表    } else {      //todo:未登录    }  }.height('100%')  .width('100%') }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711162432753-63504ecf-042f-4c24-b882-8da16c8c754a.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong>未登录</strong>状态下的内容可参考如下代码</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@Builder unLoginBuilder() {  Column({ space: 30 }) {    Image($r("app.media.ic_unLogin_bg"))      .width(177)      .height(177)     Text('未登录暂无数据')      .fontSize(14)      .fontColor('#999999')     Button('去登录')      .fontColor(Color.White)      .fontSize(14)      .width(100)      .height(34)      .backgroundColor('#43C6A0')      .onClick(() =&gt; router.pushUrl({ url: 'pages/LoginPage' }))  }  .width('100%')  .layoutWeight(1)  .justifyContent(FlexAlign.Center) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711162128347-804a7ca9-5c90-4879-84fc-46cf9a9f9c5b.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong>登录</strong>状态下的内容可参考如下代码</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@Builder listBuilder() {  Stack() {    List() {      ForEach(this.postInfoList, (post) =&gt; {        ListItem() {          PostItem({ post: post })        }      })    }.width('100%')    .height('100%')    .alignListItem(ListItemAlign.Center)     Column({ space: 20 }) {      Button({ type: ButtonType.Circle }) {        Image($r('app.media.ic_top'))          .height(14)          .width(14)      }      .height(40)      .width(40)      .backgroundColor(Color.Black)      .opacity(0.5)      .onClick(() =&gt; {        //todo:返回顶部      })       Button({ type: ButtonType.Circle }) {        Image($r('app.media.ic_refresh'))          .height(14)          .width(14)      }      .height(40)      .width(40)      .backgroundColor(Color.Black)      .opacity(0.5)      .onClick(() =&gt; {        //todo:刷新      })    }    .offset({ x: -20, y: -50 })  }.width('100%')  .layoutWeight(1)  .alignContent(Alignment.BottomEnd) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711162384885-539629d0-436d-4e9b-b31b-8012855be8ba.png" /></td>
+</tr>
+<tr>
+<td><code>@Component struct PostItem {  @ObjectLink post: PostInfo;   build() {    Column({ space: 10 }) {      Row({ space: 10 }) {        Image(this.post.avatarUrl)          .height(40)          .width(40)          .borderRadius(20)        Text(this.post.nickname)          .height(40)          .fontSize(14)          .fontWeight(FontWeight.Bold)        Blank()        Text(this.post.createTime)          .height(40)          .fontSize(14)          .fontColor('#999999')          .fontWeight(FontWeight.Medium)      }.width('100%')       Text(this.post.postText)        .width('100%')       Row() {        Column() {          StatItem({            icon: $r('app.media.ic_timer_white'),            name: '用时',            fontColor: Color.White }) {            Text(convertMillisecondsToTime(this.post.timeUsed))              .statTextStyle()          }           StatItem({            icon: $r('app.media.ic_accuracy_white'),            name: '准确率',            fontColor: Color.White          }) {            Text((this.post.answeredCount === 0 ? 0 : this.post.rightCount / this.post.answeredCount * 100).toFixed(0) + '%')              .statTextStyle()          }           StatItem({            icon: $r('app.media.ic_count_white'),            name: '个数',            fontColor: Color.White          }) {            Text(this.post.answeredCount.toString())              .statTextStyle()          }        }        .padding(10)        .borderRadius(10)        .layoutWeight(1)        .backgroundImage($r('app.media.img_post_bg'))        .backgroundImageSize(ImageSize.Cover)         Column() {          Text(this.post.likeCount.toString())            .fontSize(12)            .fontWeight(FontWeight.Medium)            .fontColor(this.post.isLike ? '#3ECBA1' : '#000000')          Image(this.post.isLike ? $r('app.media.ic_post_like_selected') : $r('app.media.ic_post_like'))            .width(26)            .height(26)            .onClick(() =&gt; {              //todo：点赞/取消点赞            })        }.width(50)      }.width('100%')      .alignItems(VerticalAlign.Bottom)    }    .padding(10)    .width('90%')    .margin({ top: 10 })    .borderRadius(10)    .shadow({ radius: 20 })  } } @Extend(Text) function statTextStyle() {  .width(100)  .fontSize(16)  .textAlign(TextAlign.End)  .fontWeight(FontWeight.Medium)  .fontColor(Color.White) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710905908891-9a8451b9-9854-42ac-8d9f-d1861cf6da6d.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="723">7.2.3. 对接后台接口<a class="headerlink" href="#723" title="Permanent link"></a></h3>
+<p>打卡圈共需对接三个接口，分别是<strong>获取打卡信息列表</strong>、<strong>点赞</strong>、<strong>取消点赞</strong>，具体内容如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>//获取全部打卡列表
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>export function getAllPost(page: number, size: number) {
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  return instance.get(&#39;/word/post/getAll&#39;, { params: { page: page, size: size } })
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>}
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>//点赞
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>export function like(postId: number) {
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>  return instance.get(&#39;/word/like/create&#39;, { params: { postId: postId } })
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>}
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>//取消点赞
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>export function cancelLike(postId: number) {
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>  return instance.get(&#39;/word/like/cancel&#39;, { params: { postId: postId } })
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>}
+</code></pre></div>
+<h3 id="724">7.2.4. 完成加载数据逻辑<a class="headerlink" href="#724" title="Permanent link"></a></h3>
+<p>打卡列表的数据加载方式为懒加载，起初只会加载一页数据，之后每次滑动到列表底部再加载下一页，全部加载完毕后，需要给出提示，如下图所示：</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1710914618153-983de484-8520-49fc-9f43-5bd5e562d03e.png" /></p>
+<p>第一页数据的加载时机，和启动应用时，用户的登录状态相关。如果启动应用时，已经是登录状态，那么在<strong>CirclePage组件</strong>出现之前就需要加载第一页数据；如果启动应用时不是登录状态，那就要等到用户登录之后再加载第一页数据。</p>
+<p>触底加载逻辑需要需要借助<strong>List</strong>组件的<code>onReachEnd()</code>事件，另外需要定义两个变量，一是<code>page</code>，表示下次要加载的页数，一是<code>total</code>，表示总记录数，用于判断是否加载完毕。</p>
+<h3 id="725">7.2.5. 完成打卡后自动刷新逻辑<a class="headerlink" href="#725" title="Permanent link"></a></h3>
+<p>打卡完成后会自动跳转到打卡圈，此时需要自动刷新页面以显示最新打卡内容，具体效果如下</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/gif/35106503/1713231169659-80be16c3-1225-4ab7-9483-9bea690f6dc5.gif" /></p>
+<p>为实现该功能，需要令打卡圈页面感知到打卡事件，进而触发刷新逻辑。事件通知可通过<strong>emitter</strong>实现，其具体用法如下</p>
+<p><strong>导入emitter模块</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>import emitter from &#39;@ohos.events.emitter&#39;;
+</code></pre></div>
+<p><strong>发送自定义事件</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>let event = {
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    eventId: 1, //事件ID，根据业务逻辑自定义
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    priority: emitter.EventPriority.LOW //事件优先级
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>};
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>let eventData = {
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    data: {
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>        &quot;content&quot;: &quot;c&quot;,
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>        &quot;id&quot;: 1,
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>        &quot;isEmpty&quot;: false,
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>    }
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>};
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>// 发送eventId为1的事件，事件数据为eventData
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>emitter.emit(event, eventData);
+</code></pre></div>
+<p><strong>订阅自定义事件</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>// 定义一个eventId为1的事件
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>let event = {
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>    eventId: 1
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>};
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>// 收到eventId为1的事件后执行该回调
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>let callback = (eventData) =&gt; {
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>    console.info(&#39;event callback&#39;);
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>};
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>// 订阅eventId为1的事件
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>emitter.on(event, callback);
+</code></pre></div>
+<p>刷新视图可参考如下代码</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@Builder loadingBuilder() {  Column({ space: 15 }) {    Image($r('app.media.ic_loading'))      .width(30)      .height(30)    Text('加载中...')      .fontSize(16)      .fontWeight(FontWeight.Medium)      .fontColor('#7e8892')  }.width('100%')  .layoutWeight(1)  .justifyContent(FlexAlign.Center) }</code></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711162581327-dd38eb74-4291-492c-a846-cbb9bfcb5ada.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="726">7.2.6. 完成点赞/取消点赞逻辑<a class="headerlink" href="#726" title="Permanent link"></a></h3>
+<p>点赞和取消点赞的逻辑相对简单，当操作发生时，需要修改<code>isLike</code>和<code>likeCount</code>两个属性，并同时向后台发送点赞后者取消点赞的请求。</p>
+<h3 id="727">7.2.7. 完成回到顶部逻辑<a class="headerlink" href="#727" title="Permanent link"></a></h3>
+<p>回到顶部的逻辑也相对简单，只需为List组件绑定Scroller，然后调用其<code>scrollToIndex</code>方法即可。</p>
+<h3 id="728">7.2.8. 完成手动刷新逻辑<a class="headerlink" href="#728" title="Permanent link"></a></h3>
+<p>手动刷新可以复用前文自动刷新的逻辑。</p>
+<h1 id="8">8. 个人中心页面<a class="headerlink" href="#8" title="Permanent link"></a></h1>
+<h2 id="81">8.1. 概述<a class="headerlink" href="#81" title="Permanent link"></a></h2>
+<p>个人中心的功能有登录/取消登录以及查看个人打卡记录，下图是未登录和登录状态</p>
+<table>
+<thead>
+<tr>
+<th>未登录</th>
+<th>登录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711068265484-464f0cdb-b7aa-4500-9476-09482e1718fd.png" /></td>
+<td><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711068296698-f0dbce92-3d1b-43d9-aa9c-3ed3b4f2d0e2.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>下图是个人打卡记录页面，需要注意，个人打卡记录需在登录状态下才能访问</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1711068403522-b42a37c4-a5bc-4bd0-aa9f-9dcbbd8c0eb7.png" /></p>
+<h2 id="82">8.2. 实现思路<a class="headerlink" href="#82" title="Permanent link"></a></h2>
+<h3 id="821">8.2.1. 对接后台接口<a class="headerlink" href="#821" title="Permanent link"></a></h3>
+<p>个人中心需要的接口共有两个，如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>//获取登录用户信息
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>export function info() {
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>  return instance.get(&#39;/word/user/info&#39;)
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>}
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>//获取我的登录打卡记录
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>export function getMyPost(page: number, size: number) {
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>  return instance.get(&#39;/word/post/getMine&#39;, { params: { page: page, size: size } })
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>}
+</code></pre></div>
+<h3 id="822">8.2.2. 完整代码<a class="headerlink" href="#822" title="Permanent link"></a></h3>
+<p><strong>个人中心</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>import router from &#39;@ohos.router&#39;;
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>import promptAction from &#39;@ohos.promptAction&#39;;
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>import { info } from &#39;../http/Api&#39;;
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>@Component
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>export struct MinePage {
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>  @StorageLink(&#39;token&#39;) @Watch(&#39;onTokenChange&#39;) token: string = &#39;&#39;
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>  @State userInfo: {
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>    nickname?: string,
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>    avatarUrl?: string
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>  } = {};
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>  async onTokenChange() {
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>    if (this.token) {
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>      let response = await info()
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>      this.userInfo = response.data.data;
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a>    } else {
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>      this.userInfo = {}
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>    }
+<a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a>  }
+<a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a>
+<a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a>  async aboutToAppear() {
+<a id="__codelineno-24-23" name="__codelineno-24-23" href="#__codelineno-24-23"></a>    if (this.token) {
+<a id="__codelineno-24-24" name="__codelineno-24-24" href="#__codelineno-24-24"></a>      let response = await info()
+<a id="__codelineno-24-25" name="__codelineno-24-25" href="#__codelineno-24-25"></a>      this.userInfo = response.data.data;
+<a id="__codelineno-24-26" name="__codelineno-24-26" href="#__codelineno-24-26"></a>    }
+<a id="__codelineno-24-27" name="__codelineno-24-27" href="#__codelineno-24-27"></a>  }
+<a id="__codelineno-24-28" name="__codelineno-24-28" href="#__codelineno-24-28"></a>
+<a id="__codelineno-24-29" name="__codelineno-24-29" href="#__codelineno-24-29"></a>  build() {
+<a id="__codelineno-24-30" name="__codelineno-24-30" href="#__codelineno-24-30"></a>    Stack() {
+<a id="__codelineno-24-31" name="__codelineno-24-31" href="#__codelineno-24-31"></a>      Column() {
+<a id="__codelineno-24-32" name="__codelineno-24-32" href="#__codelineno-24-32"></a>        Image(this.token ? this.userInfo.avatarUrl : $r(&#39;app.media.img_avatar&#39;))
+<a id="__codelineno-24-33" name="__codelineno-24-33" href="#__codelineno-24-33"></a>          .width(100)
+<a id="__codelineno-24-34" name="__codelineno-24-34" href="#__codelineno-24-34"></a>          .height(100)
+<a id="__codelineno-24-35" name="__codelineno-24-35" href="#__codelineno-24-35"></a>          .borderRadius(50)
+<a id="__codelineno-24-36" name="__codelineno-24-36" href="#__codelineno-24-36"></a>          .margin({ top: 120 })
+<a id="__codelineno-24-37" name="__codelineno-24-37" href="#__codelineno-24-37"></a>          .onClick(() =&gt; {
+<a id="__codelineno-24-38" name="__codelineno-24-38" href="#__codelineno-24-38"></a>            router.pushUrl({ url: &#39;pages/LoginPage&#39; })
+<a id="__codelineno-24-39" name="__codelineno-24-39" href="#__codelineno-24-39"></a>          })
+<a id="__codelineno-24-40" name="__codelineno-24-40" href="#__codelineno-24-40"></a>
+<a id="__codelineno-24-41" name="__codelineno-24-41" href="#__codelineno-24-41"></a>        Text(this.token ? this.userInfo.nickname : &#39;暂未登录&#39;)
+<a id="__codelineno-24-42" name="__codelineno-24-42" href="#__codelineno-24-42"></a>          .fontSize(18)
+<a id="__codelineno-24-43" name="__codelineno-24-43" href="#__codelineno-24-43"></a>          .fontWeight(FontWeight.Bold)
+<a id="__codelineno-24-44" name="__codelineno-24-44" href="#__codelineno-24-44"></a>          .fontColor(Color.Black)
+<a id="__codelineno-24-45" name="__codelineno-24-45" href="#__codelineno-24-45"></a>          .margin({ top: 20 })
+<a id="__codelineno-24-46" name="__codelineno-24-46" href="#__codelineno-24-46"></a>
+<a id="__codelineno-24-47" name="__codelineno-24-47" href="#__codelineno-24-47"></a>        if (!this.token) {
+<a id="__codelineno-24-48" name="__codelineno-24-48" href="#__codelineno-24-48"></a>          Text(&#39;请点击头像登录&#39;)
+<a id="__codelineno-24-49" name="__codelineno-24-49" href="#__codelineno-24-49"></a>            .fontSize(12)
+<a id="__codelineno-24-50" name="__codelineno-24-50" href="#__codelineno-24-50"></a>            .fontWeight(FontWeight.Medium)
+<a id="__codelineno-24-51" name="__codelineno-24-51" href="#__codelineno-24-51"></a>            .fontColor(Color.Black)
+<a id="__codelineno-24-52" name="__codelineno-24-52" href="#__codelineno-24-52"></a>            .margin({ top: 4 })
+<a id="__codelineno-24-53" name="__codelineno-24-53" href="#__codelineno-24-53"></a>        }
+<a id="__codelineno-24-54" name="__codelineno-24-54" href="#__codelineno-24-54"></a>      }
+<a id="__codelineno-24-55" name="__codelineno-24-55" href="#__codelineno-24-55"></a>      .width(&#39;100%&#39;)
+<a id="__codelineno-24-56" name="__codelineno-24-56" href="#__codelineno-24-56"></a>      .height(&#39;50%&#39;)
+<a id="__codelineno-24-57" name="__codelineno-24-57" href="#__codelineno-24-57"></a>      .backgroundImage(this.token ? this.userInfo.avatarUrl : $r(&#39;app.media.img_avatar&#39;))
+<a id="__codelineno-24-58" name="__codelineno-24-58" href="#__codelineno-24-58"></a>      .backgroundImageSize({ height: &#39;100%&#39;, width: &#39;100%&#39; })
+<a id="__codelineno-24-59" name="__codelineno-24-59" href="#__codelineno-24-59"></a>      .backgroundBlurStyle(BlurStyle.Regular)
+<a id="__codelineno-24-60" name="__codelineno-24-60" href="#__codelineno-24-60"></a>
+<a id="__codelineno-24-61" name="__codelineno-24-61" href="#__codelineno-24-61"></a>      Column({ space: 10 }) {
+<a id="__codelineno-24-62" name="__codelineno-24-62" href="#__codelineno-24-62"></a>        this.mineItemBuilder($r(&#39;app.media.ic_mine_card&#39;), &#39;打卡记录&#39;, () =&gt; {
+<a id="__codelineno-24-63" name="__codelineno-24-63" href="#__codelineno-24-63"></a>          if (this.token) {
+<a id="__codelineno-24-64" name="__codelineno-24-64" href="#__codelineno-24-64"></a>            router.pushUrl({ url: &#39;pages/PostHistoryPage&#39; })
+<a id="__codelineno-24-65" name="__codelineno-24-65" href="#__codelineno-24-65"></a>          } else {
+<a id="__codelineno-24-66" name="__codelineno-24-66" href="#__codelineno-24-66"></a>            promptAction.showToast({ message: &#39;请先点击头像登录&#39; })
+<a id="__codelineno-24-67" name="__codelineno-24-67" href="#__codelineno-24-67"></a>          }
+<a id="__codelineno-24-68" name="__codelineno-24-68" href="#__codelineno-24-68"></a>        })
+<a id="__codelineno-24-69" name="__codelineno-24-69" href="#__codelineno-24-69"></a>        Divider()
+<a id="__codelineno-24-70" name="__codelineno-24-70" href="#__codelineno-24-70"></a>        this.mineItemBuilder($r(&#39;app.media.ic_mine_update&#39;), &#39;检查更新&#39;, () =&gt; {
+<a id="__codelineno-24-71" name="__codelineno-24-71" href="#__codelineno-24-71"></a>          promptAction.showToast({ message: &#39;已是最新&#39; })
+<a id="__codelineno-24-72" name="__codelineno-24-72" href="#__codelineno-24-72"></a>        })
+<a id="__codelineno-24-73" name="__codelineno-24-73" href="#__codelineno-24-73"></a>        Divider()
+<a id="__codelineno-24-74" name="__codelineno-24-74" href="#__codelineno-24-74"></a>        this.mineItemBuilder($r(&#39;app.media.ic_mine_about&#39;), &#39;关于&#39;, () =&gt; {
+<a id="__codelineno-24-75" name="__codelineno-24-75" href="#__codelineno-24-75"></a>          promptAction.showToast({ message: &#39;没有关于&#39; })
+<a id="__codelineno-24-76" name="__codelineno-24-76" href="#__codelineno-24-76"></a>        })
+<a id="__codelineno-24-77" name="__codelineno-24-77" href="#__codelineno-24-77"></a>
+<a id="__codelineno-24-78" name="__codelineno-24-78" href="#__codelineno-24-78"></a>        Blank()
+<a id="__codelineno-24-79" name="__codelineno-24-79" href="#__codelineno-24-79"></a>
+<a id="__codelineno-24-80" name="__codelineno-24-80" href="#__codelineno-24-80"></a>        if (this.token) {
+<a id="__codelineno-24-81" name="__codelineno-24-81" href="#__codelineno-24-81"></a>          Button(&#39;退出登录&#39;)
+<a id="__codelineno-24-82" name="__codelineno-24-82" href="#__codelineno-24-82"></a>            .width(&#39;100%&#39;)
+<a id="__codelineno-24-83" name="__codelineno-24-83" href="#__codelineno-24-83"></a>            .fontSize(18)
+<a id="__codelineno-24-84" name="__codelineno-24-84" href="#__codelineno-24-84"></a>            .backgroundColor(Color.Gray)
+<a id="__codelineno-24-85" name="__codelineno-24-85" href="#__codelineno-24-85"></a>            .fontColor(Color.White)
+<a id="__codelineno-24-86" name="__codelineno-24-86" href="#__codelineno-24-86"></a>            .onClick(() =&gt; {
+<a id="__codelineno-24-87" name="__codelineno-24-87" href="#__codelineno-24-87"></a>              this.token = &#39;&#39;
+<a id="__codelineno-24-88" name="__codelineno-24-88" href="#__codelineno-24-88"></a>            })
+<a id="__codelineno-24-89" name="__codelineno-24-89" href="#__codelineno-24-89"></a>        }
+<a id="__codelineno-24-90" name="__codelineno-24-90" href="#__codelineno-24-90"></a>
+<a id="__codelineno-24-91" name="__codelineno-24-91" href="#__codelineno-24-91"></a>      }
+<a id="__codelineno-24-92" name="__codelineno-24-92" href="#__codelineno-24-92"></a>      .width(&#39;100%&#39;)
+<a id="__codelineno-24-93" name="__codelineno-24-93" href="#__codelineno-24-93"></a>      .height(&#39;60%&#39;)
+<a id="__codelineno-24-94" name="__codelineno-24-94" href="#__codelineno-24-94"></a>      .offset({ y: &#39;40%&#39; })
+<a id="__codelineno-24-95" name="__codelineno-24-95" href="#__codelineno-24-95"></a>      .borderRadius({ topLeft: 50, topRight: 50 })
+<a id="__codelineno-24-96" name="__codelineno-24-96" href="#__codelineno-24-96"></a>      .backgroundColor(Color.White)
+<a id="__codelineno-24-97" name="__codelineno-24-97" href="#__codelineno-24-97"></a>      .padding(30)
+<a id="__codelineno-24-98" name="__codelineno-24-98" href="#__codelineno-24-98"></a>
+<a id="__codelineno-24-99" name="__codelineno-24-99" href="#__codelineno-24-99"></a>    }.width(&#39;100%&#39;)
+<a id="__codelineno-24-100" name="__codelineno-24-100" href="#__codelineno-24-100"></a>    .height(&#39;100%&#39;)
+<a id="__codelineno-24-101" name="__codelineno-24-101" href="#__codelineno-24-101"></a>    .alignContent(Alignment.Top)
+<a id="__codelineno-24-102" name="__codelineno-24-102" href="#__codelineno-24-102"></a>  }
+<a id="__codelineno-24-103" name="__codelineno-24-103" href="#__codelineno-24-103"></a>
+<a id="__codelineno-24-104" name="__codelineno-24-104" href="#__codelineno-24-104"></a>  @Builder
+<a id="__codelineno-24-105" name="__codelineno-24-105" href="#__codelineno-24-105"></a>  mineItemBuilder(icon: Resource, title: string, callback?: () =&gt; void) {
+<a id="__codelineno-24-106" name="__codelineno-24-106" href="#__codelineno-24-106"></a>    Row({ space: 10 }) {
+<a id="__codelineno-24-107" name="__codelineno-24-107" href="#__codelineno-24-107"></a>      Image(icon)
+<a id="__codelineno-24-108" name="__codelineno-24-108" href="#__codelineno-24-108"></a>        .width(24)
+<a id="__codelineno-24-109" name="__codelineno-24-109" href="#__codelineno-24-109"></a>        .height(24)
+<a id="__codelineno-24-110" name="__codelineno-24-110" href="#__codelineno-24-110"></a>      Text(title)
+<a id="__codelineno-24-111" name="__codelineno-24-111" href="#__codelineno-24-111"></a>        .fontSize(16)
+<a id="__codelineno-24-112" name="__codelineno-24-112" href="#__codelineno-24-112"></a>        .height(24)
+<a id="__codelineno-24-113" name="__codelineno-24-113" href="#__codelineno-24-113"></a>        .fontWeight(FontWeight.Medium)
+<a id="__codelineno-24-114" name="__codelineno-24-114" href="#__codelineno-24-114"></a>      Blank()
+<a id="__codelineno-24-115" name="__codelineno-24-115" href="#__codelineno-24-115"></a>      Image($r(&#39;app.media.ic_arrow_right&#39;))
+<a id="__codelineno-24-116" name="__codelineno-24-116" href="#__codelineno-24-116"></a>        .width(24)
+<a id="__codelineno-24-117" name="__codelineno-24-117" href="#__codelineno-24-117"></a>        .height(24)
+<a id="__codelineno-24-118" name="__codelineno-24-118" href="#__codelineno-24-118"></a>    }.width(&#39;100%&#39;)
+<a id="__codelineno-24-119" name="__codelineno-24-119" href="#__codelineno-24-119"></a>    .height(40)
+<a id="__codelineno-24-120" name="__codelineno-24-120" href="#__codelineno-24-120"></a>    .onClick(() =&gt; {
+<a id="__codelineno-24-121" name="__codelineno-24-121" href="#__codelineno-24-121"></a>      callback();
+<a id="__codelineno-24-122" name="__codelineno-24-122" href="#__codelineno-24-122"></a>    })
+<a id="__codelineno-24-123" name="__codelineno-24-123" href="#__codelineno-24-123"></a>  }
+<a id="__codelineno-24-124" name="__codelineno-24-124" href="#__codelineno-24-124"></a>}
+</code></pre></div>
+<p><strong>打卡记录</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>import { getMyPost } from &#39;../http/Api&#39;;
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>import { PostInfo } from &#39;../model/PostInfo&#39;;
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>import router from &#39;@ohos.router&#39;;
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>import promptAction from &#39;@ohos.promptAction&#39;;
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>import { convertMillisecondsToTime } from &#39;../utils/DataUtil&#39;;
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>@Entry
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>@Component
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>struct PostHistoryPage {
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>  @State postInfoList: PostInfo[] = []
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>  page: number = 1;
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>  total: number = 0;
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>  onPageShow() {
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>    this.postInfoList = []
+<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>    this.page = 1
+<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>    this.total = 0
+<a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>    this.getMyPostInfoList(this.page)
+<a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>  }
+<a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a>
+<a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a>  async getMyPostInfoList(page: number) {
+<a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a>    let response = await getMyPost(page, 10)
+<a id="__codelineno-25-23" name="__codelineno-25-23" href="#__codelineno-25-23"></a>    response.data.data.records.forEach(post =&gt; this.postInfoList.push(new PostInfo(post)))
+<a id="__codelineno-25-24" name="__codelineno-25-24" href="#__codelineno-25-24"></a>    this.total = response.data.data.total;
+<a id="__codelineno-25-25" name="__codelineno-25-25" href="#__codelineno-25-25"></a>    this.page += 1;
+<a id="__codelineno-25-26" name="__codelineno-25-26" href="#__codelineno-25-26"></a>  }
+<a id="__codelineno-25-27" name="__codelineno-25-27" href="#__codelineno-25-27"></a>
+<a id="__codelineno-25-28" name="__codelineno-25-28" href="#__codelineno-25-28"></a>  build() {
+<a id="__codelineno-25-29" name="__codelineno-25-29" href="#__codelineno-25-29"></a>    Column() {
+<a id="__codelineno-25-30" name="__codelineno-25-30" href="#__codelineno-25-30"></a>      Row() {
+<a id="__codelineno-25-31" name="__codelineno-25-31" href="#__codelineno-25-31"></a>        Image($r(&#39;app.media.ic_back&#39;))
+<a id="__codelineno-25-32" name="__codelineno-25-32" href="#__codelineno-25-32"></a>          .width(24)
+<a id="__codelineno-25-33" name="__codelineno-25-33" href="#__codelineno-25-33"></a>          .height(24)
+<a id="__codelineno-25-34" name="__codelineno-25-34" href="#__codelineno-25-34"></a>          .onClick(() =&gt; {
+<a id="__codelineno-25-35" name="__codelineno-25-35" href="#__codelineno-25-35"></a>            router.back()
+<a id="__codelineno-25-36" name="__codelineno-25-36" href="#__codelineno-25-36"></a>          })
+<a id="__codelineno-25-37" name="__codelineno-25-37" href="#__codelineno-25-37"></a>        Text(&#39;打卡记录&#39;)
+<a id="__codelineno-25-38" name="__codelineno-25-38" href="#__codelineno-25-38"></a>          .fontSize(18)
+<a id="__codelineno-25-39" name="__codelineno-25-39" href="#__codelineno-25-39"></a>          .fontWeight(FontWeight.Bold)
+<a id="__codelineno-25-40" name="__codelineno-25-40" href="#__codelineno-25-40"></a>        Image($r(&#39;app.media.ic_back&#39;))
+<a id="__codelineno-25-41" name="__codelineno-25-41" href="#__codelineno-25-41"></a>          .width(24)
+<a id="__codelineno-25-42" name="__codelineno-25-42" href="#__codelineno-25-42"></a>          .height(24)
+<a id="__codelineno-25-43" name="__codelineno-25-43" href="#__codelineno-25-43"></a>          .visibility(Visibility.Hidden)
+<a id="__codelineno-25-44" name="__codelineno-25-44" href="#__codelineno-25-44"></a>      }.width(&#39;100%&#39;)
+<a id="__codelineno-25-45" name="__codelineno-25-45" href="#__codelineno-25-45"></a>      .height(40)
+<a id="__codelineno-25-46" name="__codelineno-25-46" href="#__codelineno-25-46"></a>      .justifyContent(FlexAlign.SpaceBetween)
+<a id="__codelineno-25-47" name="__codelineno-25-47" href="#__codelineno-25-47"></a>      .padding({ left: 20, right: 20 })
+<a id="__codelineno-25-48" name="__codelineno-25-48" href="#__codelineno-25-48"></a>
+<a id="__codelineno-25-49" name="__codelineno-25-49" href="#__codelineno-25-49"></a>      Divider()
+<a id="__codelineno-25-50" name="__codelineno-25-50" href="#__codelineno-25-50"></a>        .color(Color.Black)
+<a id="__codelineno-25-51" name="__codelineno-25-51" href="#__codelineno-25-51"></a>        .margin({ left: 20, right: 20 })
+<a id="__codelineno-25-52" name="__codelineno-25-52" href="#__codelineno-25-52"></a>
+<a id="__codelineno-25-53" name="__codelineno-25-53" href="#__codelineno-25-53"></a>      if (this.postInfoList.length &gt; 0) {
+<a id="__codelineno-25-54" name="__codelineno-25-54" href="#__codelineno-25-54"></a>        this.listBuilder()
+<a id="__codelineno-25-55" name="__codelineno-25-55" href="#__codelineno-25-55"></a>      } else {
+<a id="__codelineno-25-56" name="__codelineno-25-56" href="#__codelineno-25-56"></a>        this.emptyBuilder()
+<a id="__codelineno-25-57" name="__codelineno-25-57" href="#__codelineno-25-57"></a>      }
+<a id="__codelineno-25-58" name="__codelineno-25-58" href="#__codelineno-25-58"></a>
+<a id="__codelineno-25-59" name="__codelineno-25-59" href="#__codelineno-25-59"></a>    }
+<a id="__codelineno-25-60" name="__codelineno-25-60" href="#__codelineno-25-60"></a>    .height(&#39;100%&#39;)
+<a id="__codelineno-25-61" name="__codelineno-25-61" href="#__codelineno-25-61"></a>    .width(&#39;100%&#39;)
+<a id="__codelineno-25-62" name="__codelineno-25-62" href="#__codelineno-25-62"></a>    .padding({
+<a id="__codelineno-25-63" name="__codelineno-25-63" href="#__codelineno-25-63"></a>      top: 40
+<a id="__codelineno-25-64" name="__codelineno-25-64" href="#__codelineno-25-64"></a>    })
+<a id="__codelineno-25-65" name="__codelineno-25-65" href="#__codelineno-25-65"></a>  }
+<a id="__codelineno-25-66" name="__codelineno-25-66" href="#__codelineno-25-66"></a>
+<a id="__codelineno-25-67" name="__codelineno-25-67" href="#__codelineno-25-67"></a>  @Builder
+<a id="__codelineno-25-68" name="__codelineno-25-68" href="#__codelineno-25-68"></a>  listBuilder() {
+<a id="__codelineno-25-69" name="__codelineno-25-69" href="#__codelineno-25-69"></a>    List() {
+<a id="__codelineno-25-70" name="__codelineno-25-70" href="#__codelineno-25-70"></a>      ForEach(this.postInfoList, (post) =&gt; {
+<a id="__codelineno-25-71" name="__codelineno-25-71" href="#__codelineno-25-71"></a>        ListItem() {
+<a id="__codelineno-25-72" name="__codelineno-25-72" href="#__codelineno-25-72"></a>          this.postItemBuilder(post)
+<a id="__codelineno-25-73" name="__codelineno-25-73" href="#__codelineno-25-73"></a>        }.width(&#39;100%&#39;)
+<a id="__codelineno-25-74" name="__codelineno-25-74" href="#__codelineno-25-74"></a>      })
+<a id="__codelineno-25-75" name="__codelineno-25-75" href="#__codelineno-25-75"></a>    }
+<a id="__codelineno-25-76" name="__codelineno-25-76" href="#__codelineno-25-76"></a>    .width(&#39;100%&#39;)
+<a id="__codelineno-25-77" name="__codelineno-25-77" href="#__codelineno-25-77"></a>    .layoutWeight(1)
+<a id="__codelineno-25-78" name="__codelineno-25-78" href="#__codelineno-25-78"></a>    .alignListItem(ListItemAlign.Center)
+<a id="__codelineno-25-79" name="__codelineno-25-79" href="#__codelineno-25-79"></a>    .onReachEnd(() =&gt; {
+<a id="__codelineno-25-80" name="__codelineno-25-80" href="#__codelineno-25-80"></a>      if (this.postInfoList.length &lt; this.total) {
+<a id="__codelineno-25-81" name="__codelineno-25-81" href="#__codelineno-25-81"></a>        this.getMyPostInfoList(this.page)
+<a id="__codelineno-25-82" name="__codelineno-25-82" href="#__codelineno-25-82"></a>      } else {
+<a id="__codelineno-25-83" name="__codelineno-25-83" href="#__codelineno-25-83"></a>        promptAction.showToast({ message: &#39;没有更多的数据了...&#39; })
+<a id="__codelineno-25-84" name="__codelineno-25-84" href="#__codelineno-25-84"></a>      }
+<a id="__codelineno-25-85" name="__codelineno-25-85" href="#__codelineno-25-85"></a>    })
+<a id="__codelineno-25-86" name="__codelineno-25-86" href="#__codelineno-25-86"></a>  }
+<a id="__codelineno-25-87" name="__codelineno-25-87" href="#__codelineno-25-87"></a>
+<a id="__codelineno-25-88" name="__codelineno-25-88" href="#__codelineno-25-88"></a>  @Builder
+<a id="__codelineno-25-89" name="__codelineno-25-89" href="#__codelineno-25-89"></a>  emptyBuilder() {
+<a id="__codelineno-25-90" name="__codelineno-25-90" href="#__codelineno-25-90"></a>    Column() {
+<a id="__codelineno-25-91" name="__codelineno-25-91" href="#__codelineno-25-91"></a>      Image($r(&#39;app.media.ic_empty&#39;))
+<a id="__codelineno-25-92" name="__codelineno-25-92" href="#__codelineno-25-92"></a>        .width(200)
+<a id="__codelineno-25-93" name="__codelineno-25-93" href="#__codelineno-25-93"></a>        .height(200)
+<a id="__codelineno-25-94" name="__codelineno-25-94" href="#__codelineno-25-94"></a>      Text(&#39;暂无数据&#39;)
+<a id="__codelineno-25-95" name="__codelineno-25-95" href="#__codelineno-25-95"></a>        .fontSize(20)
+<a id="__codelineno-25-96" name="__codelineno-25-96" href="#__codelineno-25-96"></a>        .fontWeight(FontWeight.Medium)
+<a id="__codelineno-25-97" name="__codelineno-25-97" href="#__codelineno-25-97"></a>        .fontColor(&#39;#7e8892&#39;)
+<a id="__codelineno-25-98" name="__codelineno-25-98" href="#__codelineno-25-98"></a>    }.width(&#39;100%&#39;)
+<a id="__codelineno-25-99" name="__codelineno-25-99" href="#__codelineno-25-99"></a>    .layoutWeight(1)
+<a id="__codelineno-25-100" name="__codelineno-25-100" href="#__codelineno-25-100"></a>    .justifyContent(FlexAlign.Center)
+<a id="__codelineno-25-101" name="__codelineno-25-101" href="#__codelineno-25-101"></a>  }
+<a id="__codelineno-25-102" name="__codelineno-25-102" href="#__codelineno-25-102"></a>
+<a id="__codelineno-25-103" name="__codelineno-25-103" href="#__codelineno-25-103"></a>  @Builder
+<a id="__codelineno-25-104" name="__codelineno-25-104" href="#__codelineno-25-104"></a>  postItemBuilder(post: PostInfo) {
+<a id="__codelineno-25-105" name="__codelineno-25-105" href="#__codelineno-25-105"></a>    Row() {
+<a id="__codelineno-25-106" name="__codelineno-25-106" href="#__codelineno-25-106"></a>      Column({ space: 10 }) {
+<a id="__codelineno-25-107" name="__codelineno-25-107" href="#__codelineno-25-107"></a>        Text(post.createTime)
+<a id="__codelineno-25-108" name="__codelineno-25-108" href="#__codelineno-25-108"></a>          .fontSize(14)
+<a id="__codelineno-25-109" name="__codelineno-25-109" href="#__codelineno-25-109"></a>          .fontColor(&#39;#999999&#39;)
+<a id="__codelineno-25-110" name="__codelineno-25-110" href="#__codelineno-25-110"></a>          .height(21)
+<a id="__codelineno-25-111" name="__codelineno-25-111" href="#__codelineno-25-111"></a>        Row() {
+<a id="__codelineno-25-112" name="__codelineno-25-112" href="#__codelineno-25-112"></a>          Text(&#39;单词数 : &#39; + post.answeredCount)
+<a id="__codelineno-25-113" name="__codelineno-25-113" href="#__codelineno-25-113"></a>            .fontSize(14)
+<a id="__codelineno-25-114" name="__codelineno-25-114" href="#__codelineno-25-114"></a>            .fontColor(&#39;#1C1C1C&#39;)
+<a id="__codelineno-25-115" name="__codelineno-25-115" href="#__codelineno-25-115"></a>            .height(21)
+<a id="__codelineno-25-116" name="__codelineno-25-116" href="#__codelineno-25-116"></a>            .margin({
+<a id="__codelineno-25-117" name="__codelineno-25-117" href="#__codelineno-25-117"></a>              right: 20
+<a id="__codelineno-25-118" name="__codelineno-25-118" href="#__codelineno-25-118"></a>            })
+<a id="__codelineno-25-119" name="__codelineno-25-119" href="#__codelineno-25-119"></a>          Text(&#39;准确率 : &#39; + (post.rightCount / post.answeredCount * 100).toFixed(0) + &#39;%&#39;)
+<a id="__codelineno-25-120" name="__codelineno-25-120" href="#__codelineno-25-120"></a>            .fontSize(14)
+<a id="__codelineno-25-121" name="__codelineno-25-121" href="#__codelineno-25-121"></a>            .fontColor(&#39;#1C1C1C&#39;)
+<a id="__codelineno-25-122" name="__codelineno-25-122" href="#__codelineno-25-122"></a>            .height(21)
+<a id="__codelineno-25-123" name="__codelineno-25-123" href="#__codelineno-25-123"></a>        }
+<a id="__codelineno-25-124" name="__codelineno-25-124" href="#__codelineno-25-124"></a>
+<a id="__codelineno-25-125" name="__codelineno-25-125" href="#__codelineno-25-125"></a>        Text(&#39;用时 : &#39; + convertMillisecondsToTime(post.timeUsed))
+<a id="__codelineno-25-126" name="__codelineno-25-126" href="#__codelineno-25-126"></a>          .fontSize(14)
+<a id="__codelineno-25-127" name="__codelineno-25-127" href="#__codelineno-25-127"></a>          .fontColor(&#39;#1C1C1C&#39;)
+<a id="__codelineno-25-128" name="__codelineno-25-128" href="#__codelineno-25-128"></a>          .height(21)
+<a id="__codelineno-25-129" name="__codelineno-25-129" href="#__codelineno-25-129"></a>
+<a id="__codelineno-25-130" name="__codelineno-25-130" href="#__codelineno-25-130"></a>      }.alignItems(HorizontalAlign.Start)
+<a id="__codelineno-25-131" name="__codelineno-25-131" href="#__codelineno-25-131"></a>
+<a id="__codelineno-25-132" name="__codelineno-25-132" href="#__codelineno-25-132"></a>      Blank()
+<a id="__codelineno-25-133" name="__codelineno-25-133" href="#__codelineno-25-133"></a>
+<a id="__codelineno-25-134" name="__codelineno-25-134" href="#__codelineno-25-134"></a>      Text(post.createTime.substring(8, 10))
+<a id="__codelineno-25-135" name="__codelineno-25-135" href="#__codelineno-25-135"></a>        .width(58)
+<a id="__codelineno-25-136" name="__codelineno-25-136" href="#__codelineno-25-136"></a>        .height(58)
+<a id="__codelineno-25-137" name="__codelineno-25-137" href="#__codelineno-25-137"></a>        .fontSize(18)
+<a id="__codelineno-25-138" name="__codelineno-25-138" href="#__codelineno-25-138"></a>        .textAlign(TextAlign.Center)
+<a id="__codelineno-25-139" name="__codelineno-25-139" href="#__codelineno-25-139"></a>        .fontColor(&#39;#333333&#39;)
+<a id="__codelineno-25-140" name="__codelineno-25-140" href="#__codelineno-25-140"></a>        .fontWeight(FontWeight.Bold)
+<a id="__codelineno-25-141" name="__codelineno-25-141" href="#__codelineno-25-141"></a>        .backgroundImage($r(&#39;app.media.ic_history_date&#39;))
+<a id="__codelineno-25-142" name="__codelineno-25-142" href="#__codelineno-25-142"></a>        .backgroundImageSize(ImageSize.Contain)
+<a id="__codelineno-25-143" name="__codelineno-25-143" href="#__codelineno-25-143"></a>    }
+<a id="__codelineno-25-144" name="__codelineno-25-144" href="#__codelineno-25-144"></a>    .borderWidth(1)
+<a id="__codelineno-25-145" name="__codelineno-25-145" href="#__codelineno-25-145"></a>    .padding(10)
+<a id="__codelineno-25-146" name="__codelineno-25-146" href="#__codelineno-25-146"></a>    .borderRadius(10)
+<a id="__codelineno-25-147" name="__codelineno-25-147" href="#__codelineno-25-147"></a>    .shadow({ radius: 20 })
+<a id="__codelineno-25-148" name="__codelineno-25-148" href="#__codelineno-25-148"></a>    .width(&#39;90%&#39;)
+<a id="__codelineno-25-149" name="__codelineno-25-149" href="#__codelineno-25-149"></a>    .margin({ top: 10 })
+<a id="__codelineno-25-150" name="__codelineno-25-150" href="#__codelineno-25-150"></a>  }
+<a id="__codelineno-25-151" name="__codelineno-25-151" href="#__codelineno-25-151"></a>}
+</code></pre></div>
+<h1 id="9">9. 应用信息<a class="headerlink" href="#9" title="Permanent link"></a></h1>
+<h2 id="91">9.1. 概述<a class="headerlink" href="#91" title="Permanent link"></a></h2>
+<p>需要修改的信息主要包括应用的图标和名称，如下图所示</p>
+<table>
+<thead>
+<tr>
+<th><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1713494224173-a7995ea9-3c9b-4117-b9b2-434b2b526321.png" /></th>
+<th><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/35106503/1713494260835-d9316c3a-e412-4944-b11c-fdf160d1c216.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="92">9.2. 实现思路<a class="headerlink" href="#92" title="Permanent link"></a></h2>
+<h3 id="921">9.2.1. 所需技能<a class="headerlink" href="#921" title="Permanent link"></a></h3>
+<ol>
+<li>熟悉鸿蒙应用Stage模型基本概念</li>
+<li>熟悉基于Stage模型所创建工程的配置文件</li>
+</ol>
+<p>上述内容可参考<a href="https://www.yuque.com/danny-sroga/gaguqh/qg2n2d5o04iu1gsm">HarmonyOS 4.0 应用开发</a>中的第15章。</p>
+<h3 id="922">9.2.2. 实现思路<a class="headerlink" href="#922" title="Permanent link"></a></h3>
+<p>在鸿蒙应用中，桌面上启动应用的图标以UIAblitity为粒度，支持同一个应用存在多个启动图标，点击后会启动对应的UIAblitity，因此桌面图标需要在<code>module.json5</code>文件中的对应的Ablitity中进行配置。</p>
+<p>设置界面中的应用图标是以应用为粒度的，每个应用只能设置一个，需要在<code>app.json5</code>文件中配置。</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      coder, try to be engineer. here, we share thoughts worth sharing
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gearless-joeeee" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.action.edit", "content.code.copy", "toc.follow", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

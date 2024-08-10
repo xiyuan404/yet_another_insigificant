@@ -1,0 +1,63 @@
+:root {
+  --md-primary-fg-color: #42b883;
+  --md-primary-fg-color--light: #42d392;
+  --md-primary-fg-color--dark: #33a06f;
+}
+
+[data-md-color-accent='green'] {
+  --md-accent-fg-color: #33a06f;
+  --md-accent-fg-color--transparent: #42d392;
+  --md-accent-bg-color: #fff;
+  --md-accent-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-accent='purple'] {
+  --md-accent-fg-color: rgb(145, 109, 213);
+  --md-accent-fg-color--transparent: rgba(145, 109, 213, 0.2);
+  --md-accent-bg-color: #fff;
+  --md-accent-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-scheme='slate'] {
+  --md-primary-fg-color: #2e303e;
+  --md-accent-fg-color: #00bda4;
+  --md-typeset-a-color: #526cfe;
+}
+/* --vt-c-green: #42b883;
+--vt-c-green-light: #42d392;
+--vt-c-green-lighter: #35eb9a; */
+
+.md-typeset h2 {
+  font-size: 22px;
+  /* display: inline-block; */
+  padding-left: 10px;
+  border-left: 5px solid var(--md-primary-fg-color--light);
+  background-color: color-mix(
+    in srgb,
+    var(--md-primary-fg-color--light) 20%,
+    white
+  );
+  /* background-color: var(--md-primary-fg-color--light); */
+
+  font-weight: bold;
+}
+.md-typeset h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--md-primary-fg-color--light);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+  /* position: relative; 使 ::after 定位相对于 h3 */
+}
+
+/* .md-typeset h3::after {
+  background-color: rgb(145, 109, 213);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+} */
